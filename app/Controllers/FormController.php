@@ -27,6 +27,6 @@ class FormController extends BaseController
         ];
 
         $formModel->insert($data);
-        return redirect()->to('/form')->with('message', 'Permintaan surat berhasil dikirim!');
+        return redirect()->to('/form-permintaan-surat')->with('message', 'Permintaan surat berhasil dikirim!');
     }
 }

@@ -28,12 +28,12 @@
         <?php if ($info['status'] == 'Menunggu'): ?>
             <form action="<?= base_url('/admin/verifikasi/' . $info['id']) ?>" method="post" class="mt-4">
                 <div class="form-group">
-                    <label for="rumah_sakit">Pilih Rumah Sakit Mitra</label>
+                    <label for="rumah_sakit">Pilih Rumah Sakit </label>
                     <select name="rumah_sakit" id="rumah_sakit" class="form-control" required>
                         <option value="">-- Pilih Rumah Sakit --</option>
-                        <option value="RS Mitra A">RS Mitra A</option>
-                        <option value="RS Mitra B">RS Mitra B</option>
-                        <option value="RS Mitra C">RS Mitra C</option>
+                        <option value="RS A">RS A</option>
+                        <option value="RS B">RS B</option>
+                        <option value="RS C">RS C</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-success">
