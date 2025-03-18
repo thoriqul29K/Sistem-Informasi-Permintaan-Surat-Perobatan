@@ -43,7 +43,7 @@
 
       <!-- Pesan yang ditampilkan tanpa reload halaman -->
       <div id="message" style="display: none; margin-top: 20px;" class="alert alert-success">
-        Informasi yang diisi telah berhasil terkirim
+        <p style="color:red">Informasi yang diisi telah berhasil terkirim</p>
       </div>
 
       <button type="submit" class="formbold-btn">Kirim</button>
