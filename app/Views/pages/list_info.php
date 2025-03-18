@@ -20,7 +20,7 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Nama Lengkap</th>
+                    <th>Nama</th>
                     <th>Email</th>
                     <th>NIK</th>
                     <th>Status</th>
@@ -31,7 +31,7 @@
                 <?php foreach ($list_info as $info): ?>
                     <tr>
                         <td><?= $info['id'] ?></td>
-                        <td><?= $info['nama_depan'] . ' ' . $info['nama_belakang'] ?></td>
+                        <td><?= $info['nama_depan'] ?></td>
                         <td><?= $info['email'] ?></td>
                         <td><?= $info['nik'] ?></td>
                         <td><?= $info['status'] ?></td>
