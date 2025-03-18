@@ -2,16 +2,23 @@
 
 namespace App\Controllers;
 
+use App\Models\FormModel;
 use Dompdf\Dompdf;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 class AdminController extends BaseController
 {
+    protected $formModel;
+
+    public function __construct()
+    {
+        $this->formModel = new FormModel(); // Inisialisasi model di constructor
+    }
     public function index()
     {
         $data['list_info'] = $this->formModel->findAll();
-        return view('admin/list_info', $data);
+        return view('pages/admin/list_info', $data);
     }
 
     public function verify($id)
@@ -21,7 +28,7 @@ class AdminController extends BaseController
             'verified_by' => session()->get('id')
         ]);
 
-        return redirect()->to('/admin/list')->with('message', 'Data berhasil diverifikasi.');
+        return redirect()->to('/list_info')->with('message', 'Data berhasil diverifikasi.');
     }
 
     public function generatePdf($id)

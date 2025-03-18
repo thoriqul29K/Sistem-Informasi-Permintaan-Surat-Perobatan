@@ -31,7 +31,7 @@
                 <?php foreach ($list_info as $info): ?>
                     <tr>
                         <td><?= $info['id'] ?></td>
-                        <td><?= $info['nama_depan'] ?></td>
+                        <td><?= $info['nama_lengkap'] ?></td>
                         <td><?= $info['email'] ?></td>
                         <td><?= $info['nik'] ?></td>
                         <td><?= $info['status'] ?></td>
