@@ -23,21 +23,19 @@ class LoginController extends BaseController
         $user = $model->where('email', $email)->first();
 
         if ($user) {
-            // Jika password tersimpan dengan hashing, gunakan password_verify
-            if ($password === $user['password']) {
+            // Gunakan SHA-256 untuk memverifikasi password
+            if (hash('sha256', $password) === $user['password']) {
                 // Set session data
-                session()->set(
-                    [
-                        'id'    => $user['id'],
-                        'email' => $user['email'],
-                        'nama'  => $user['nama'],
-                        'role'  => $user['role']
-                    ]
-                );
+                session()->set([
+                    'id'    => $user['id'],
+                    'email' => $user['email'],
+                    'nama'  => $user['nama'],
+                    'role'  => $user['role']
+                ]);
 
                 // Redirect berdasarkan role
                 if ($user['role'] === 'admin') {
-                    return redirect()->to('/list-info');
+                    return redirect()->to('/list_info');
                 } else {
                     return redirect()->to('/form-permintaan-surat');
                 }

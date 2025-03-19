@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
    <!-- CSS -->
    <link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>">
-   <title>Login form - Bedimcode</title>
+   <title>Login | PTBA</title>
 </head>
 
 <body>
