@@ -15,10 +15,10 @@
    <div class="login">
       <img src="<?= base_url('assets/img/login-bg.png') ?>" alt="image" class="login__bg">
       <form action="<?= base_url('login') ?>" method="POST" class="login__form">
-         <h1 class="login__title">Login</h1>
+         <h1 class="login__title">Masuk</h1>
          <div class="login__inputs">
             <div class="login__box">
-               <input type="email" name="email" placeholder="Email ID" required class="login__input">
+               <input type="email" name="email" placeholder="Email" required class="login__input">
                <i class="ri-mail-fill"></i>
             </div>
             <div class="login__box">
@@ -29,13 +29,12 @@
          <div class="login__check">
             <div class="login__check-box">
                <input type="checkbox" class="login__check-input" id="user-check">
-               <label for="user-check" class="login__check-label">Remember me</label>
+               <label for="user-check" class="login__check-label">Ingat saya</label>
             </div>
-            <a href="#" class="login__forgot">Forgot Password?</a>
+            <a href="#" class="login__forgot">Lupa password?</a>
          </div>
-         <button type="submit" class="login__button">Login</button>
+         <button type="submit" class="login__button">Masuk</button>
          <div class="login__register">
-            <a href="<?= base_url('form-permintaan-surat') ?>">SKIP DULU GAK SIH☝🏻😅</a>
          </div>
       </form>
    </div>
