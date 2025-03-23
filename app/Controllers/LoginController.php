@@ -27,15 +27,15 @@ class LoginController extends BaseController
             if (hash('sha256', $password) === $user['password']) {
                 // Set session data
                 session()->set([
-                    'id'    => $user['id'],
-                    'email' => $user['email'],
-                    'nama'  => $user['nama'],
-                    'role'  => $user['role']
+                    'user_id'    => $user['id'],
+                    'email'      => $user['email'],
+                    'nama'       => $user['nama'],
+                    'role'       => $user['role']
                 ]);
 
                 // Redirect berdasarkan role
                 if ($user['role'] === 'admin') {
-                    return redirect()->to('/list_info');
+                    return redirect()->to('/list-info');
                 } else {
                     return redirect()->to('/form-permintaan-surat');
                 }

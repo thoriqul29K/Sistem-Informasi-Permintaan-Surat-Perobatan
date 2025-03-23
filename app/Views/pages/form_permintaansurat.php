@@ -1,9 +1,13 @@
+<?= $this->include('layouts/header') ?>
 <div class="formbold-main-wrapper">
   <!-- Author: FormBold Team -->
   <!-- Learn More: https://formbold.com -->
   <div class="formbold-form-wrapper">
-    <img class="formbold-img" width="200" height="200" src="<?= base_url('assets/img/logo PTBA.png') ?>" />
-
+    <div class="logo-container">
+      <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/logo BUMN.png') ?>" />
+      <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/Akhlak.png') ?>" />
+      <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/logo PTBA 2.png') ?>" />
+    </div>
     <form id="formPermintaan" action="<?= base_url('form/simpan') ?>" method="POST">
       <div class="formbold-form-title">
         <h2>Sistem Informasi Permintaan Surat Perobatan</h2>
@@ -106,6 +110,8 @@
 
   .formbold-img {
     margin-bottom: 45px;
+    display: block;
+    margin: 0 auto;
   }
 
   .formbold-form-title {
@@ -221,6 +227,24 @@
 
   .formbold-checkbox-wrapper {
     text-align: center;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    /* Untuk menengahkan secara horizontal */
+    align-items: center;
+    /* Opsional, untuk menengahkan secara vertikal */
+    gap: 20px;
+    /* Jarak antar gambar */
+    margin-bottom: 20px;
+    /* Jarak antara container logo dengan form, jika diperlukan */
+  }
+
+  .logo-container .formbold-img {
+    display: inline-block;
+    margin: 0;
+    /* margin dihapus agar flex container yang mengatur jarak */
   }
 </style>
 <!-- JavaScript untuk meng-handle AJAX form submission -->

@@ -1,3 +1,4 @@
+<?= $this->include('layouts/header') ?>
 <!DOCTYPE html>
 <html>
 
