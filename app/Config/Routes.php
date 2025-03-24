@@ -12,6 +12,6 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('form-permintaan-surat', 'FormController::SIPSP');
 });
 $routes->get('logout', 'LogoutController::index');
-$routes->group('', ['filter' => 'auth,admin'], function ($routes) {
+$routes->group('', ['filter' => 'auth', 'admin'], function ($routes) {
     $routes->get('list-info', 'AdminController::index');
 });
