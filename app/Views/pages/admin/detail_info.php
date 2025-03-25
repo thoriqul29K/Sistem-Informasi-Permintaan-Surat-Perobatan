@@ -15,7 +15,7 @@
                 Informasi Permintaan
             </div>
             <div class="card-body">
-                <p><strong>Nama:</strong> <?= $info['nama'] ?></p>
+                <p><strong>Nama:</strong> <?= $info['nama_lengkap'] ?></p>
                 <p><strong>Email:</strong> <?= $info['email'] ?></p>
                 <p><strong>NIK:</strong> <?= $info['nik'] ?></p>
                 <p><strong>Alamat:</strong> <?= $info['alamat'] ?></p>

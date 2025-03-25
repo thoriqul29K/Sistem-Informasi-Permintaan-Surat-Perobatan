@@ -14,4 +14,6 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
 $routes->get('logout', 'LogoutController::index');
 $routes->group('', ['filter' => 'auth', 'admin'], function ($routes) {
     $routes->get('list-info', 'AdminController::index');
+    $routes->get('admin/detail/(:num)', 'AdminController::detail/$1');
+    $routes->post('admin/verifikasi/(:num)', 'AdminController::verify/$1');
 });

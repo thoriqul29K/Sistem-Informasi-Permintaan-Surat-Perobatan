@@ -21,6 +21,21 @@ class AdminController extends BaseController
         return view('pages/admin/list_info', $data);
     }
 
+    public function detail($id)
+    {
+        // Ambil data detail berdasarkan ID
+        $data['info'] = $this->formModel->find($id);
+
+        // Jika data tidak ditemukan, redirect dengan pesan error
+        if (!$data['info']) {
+            return redirect()->to('/list-info')->with('error', 'Data tidak ditemukan.');
+        }
+
+        // Tampilkan view detail_info dengan data
+        return view('pages/admin/detail_info', $data);
+    }
+
+
     public function verify($id)
     {
         $this->formModel->update($id, [
@@ -28,7 +43,7 @@ class AdminController extends BaseController
             'verified_by' => session()->get('id')
         ]);
 
-        return redirect()->to('/list_info')->with('message', 'Data berhasil diverifikasi.');
+        return redirect()->to('/list-info')->with('message', 'Data berhasil diverifikasi.');
     }
 
     public function generatePdf($id)
