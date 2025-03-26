@@ -1,0 +1,67 @@
+DEBUG - 2025-03-26 00:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:14:09 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:14:24 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:14:39 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:14:45 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:14:48 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:14:56 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:15:03 --> AuthFilter triggered. Session ID: 
+ERROR - 2025-03-26 00:15:25 --> Email gagal dikirim: SMTP Error: Could not connect to SMTP host. Failed to connect to serverSMTP server error: Failed to connect to server SMTP code: 10060 Additional SMTP info: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+DEBUG - 2025-03-26 00:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:15:39 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:17:57 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:18:01 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:22:58 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:23:03 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:23:15 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:23:15 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:23:27 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:23:29 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:25:13 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:27:06 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:27:11 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:27:13 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:27:24 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:27:36 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:27:40 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:27:40 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:36:16 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:37:14 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:37:28 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:37:42 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 00:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 00:55:57 --> AuthFilter triggered. Session ID: 

@@ -16,4 +16,7 @@ $routes->group('', ['filter' => 'auth', 'admin'], function ($routes) {
     $routes->get('list-info', 'AdminController::index');
     $routes->get('admin/detail/(:num)', 'AdminController::detail/$1');
     $routes->post('admin/verifikasi/(:num)', 'AdminController::verify/$1');
+    $routes->get('admin/generate-pdf/(:num)', 'AdminController::generatePdf/$1');
+    $routes->post('admin/hapus/(:num)', 'AdminController::hapus/$1');
+    // Opsional: route untuk penghapusan otomatis (untuk testing CLI)
 });

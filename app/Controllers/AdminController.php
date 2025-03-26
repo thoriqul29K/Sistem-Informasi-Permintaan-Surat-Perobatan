@@ -39,18 +39,27 @@ class AdminController extends BaseController
     public function verify($id)
     {
         $this->formModel->update($id, [
-            'status' => 'Disetujui',
-            'verified_by' => session()->get('id')
+            'status'      => 'Disetujui',
+            'verified_by' => session()->get('user_id'),
+            'approved_at' => date('Y-m-d H:i:s')
         ]);
 
-        return redirect()->to('/list-info')->with('message', 'Data berhasil diverifikasi.');
+        // Redirect kembali ke halaman detail dengan flash message
+        return redirect()->to('/admin/detail/' . $id)->with('message', 'Permintaan surat sudah diverifikasi.');
     }
+
+
+
 
     public function generatePdf($id)
     {
         $info = $this->formModel->find($id);
+        if (!$info) {
+            return redirect()->to('/list-info')->with('error', 'Data tidak ditemukan.');
+        }
+
         $dompdf = new Dompdf();
-        $html = view('admin/template_surat', ['info' => $info]);
+        $html = view('pages/admin/template_surat', ['info' => $info]);
         $dompdf->loadHtml($html);
         $dompdf->setPaper('A4', 'portrait');
         $dompdf->render();
@@ -64,6 +73,7 @@ class AdminController extends BaseController
 
         return $this->response->download($filePath, null);
     }
+
 
     private function sendEmail($recipient, $filePath)
     {
@@ -87,5 +97,32 @@ class AdminController extends BaseController
         } catch (Exception $e) {
             log_message('error', 'Email gagal dikirim: ' . $mail->ErrorInfo);
         }
+    }
+
+    public function hapus($id)
+    {
+        // Cari data berdasarkan ID
+        $info = $this->formModel->find($id);
+        if (!$info) {
+            return redirect()->to('/list-info')->with('error', 'Data tidak ditemukan.');
+        }
+
+        // Hapus data
+        $this->formModel->delete($id);
+        return redirect()->to('/list-info')->with('message', 'Data berhasil dihapus.');
+    }
+
+    public function hapusOtomatis()
+    {
+        // Hitung tanggal satu minggu yang lalu
+        $oneWeekAgo = date('Y-m-d H:i:s', strtotime('-1 week'));
+
+        // Hapus data dengan status Disetujui dan approved_at lebih lama dari satu minggu
+        $this->formModel->where('status', 'Disetujui')
+            ->where('approved_at <', $oneWeekAgo)
+            ->delete();
+
+        // Untuk testing, kita bisa mengembalikan output
+        echo "Penghapusan otomatis selesai.";
     }
 }

@@ -4,11 +4,16 @@
 <head>
     <title>Detail & Verifikasi Permintaan Surat</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" />
 </head>
 
 <body>
     <div class="container mt-5">
         <h2>Detail & Verifikasi Permintaan Surat</h2>
+        <!-- Tombol Kembali di pojok kiri atas -->
+        <a href="<?= base_url('/list-info') ?>" class="btn btn-secondary mb-3">
+            <i class="ri-arrow-left-line"></i> Kembali
+        </a>
 
         <div class="card mt-3">
             <div class="card-header">
@@ -45,6 +50,16 @@
                 Permintaan surat sudah diverifikasi.
             </div>
         <?php endif; ?>
+        <?php if ($info['status'] == 'Disetujui'): ?>
+            <a href="<?= base_url('/admin/generate-pdf/' . $info['id']) ?>" class="btn btn-warning mt-3">
+                Cetak Ulang PDF
+            </a>
+        <?php endif; ?>
+        <!-- Tombol Hapus Informasi -->
+        <form action="<?= base_url('/admin/hapus/' . $info['id']) ?>" method="post" onsubmit="return confirm('Apakah Anda yakin ingin menghapus informasi ini?');" class="mt-3">
+            <button type="submit" class="btn btn-danger">Hapus Informasi</button>
+        </form>
+
     </div>
 </body>
 
