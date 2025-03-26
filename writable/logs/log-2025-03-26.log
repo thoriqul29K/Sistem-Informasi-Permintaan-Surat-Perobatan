@@ -83,3 +83,55 @@ DEBUG - 2025-03-26 02:06:06 --> AuthFilter triggered. Session ID:
 DEBUG - 2025-03-26 02:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-03-26 02:06:46 --> AuthFilter triggered. Session ID: 
 ERROR - 2025-03-26 02:07:09 --> Email gagal dikirim: SMTP Error: Could not connect to SMTP host. Failed to connect to serverSMTP server error: Failed to connect to server SMTP code: 10060 Additional SMTP info: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+DEBUG - 2025-03-26 02:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:11:30 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:18:11 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:18:54 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:19:05 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:19:08 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:19:12 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:19:12 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:20:17 --> AuthFilter triggered. Session ID: 
+ERROR - 2025-03-26 02:20:39 --> Email gagal dikirim: SMTP Error: Could not connect to SMTP host. Failed to connect to serverSMTP server error: Failed to connect to server SMTP code: 10060 Additional SMTP info: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+DEBUG - 2025-03-26 02:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:51:45 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:53:19 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 03:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:02:06 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 03:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:35:30 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 03:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:46:11 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 03:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:47:00 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 03:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:53:44 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 03:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:54:19 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 03:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:54:57 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 03:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:55:05 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 03:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:55:10 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 03:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:55:16 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 03:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:55:42 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 03:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:56:05 --> AuthFilter triggered. Session ID: 

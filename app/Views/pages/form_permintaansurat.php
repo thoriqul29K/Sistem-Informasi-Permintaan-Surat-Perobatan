@@ -51,8 +51,6 @@
       </div>
 
       <button type="submit" class="formbold-btn">Kirim</button>
-      <br><br>
-      <a href="<?= base_url('/') ?>" class="button">Balik ke halaman login</a>
     </form>
 
   </div>
@@ -97,13 +95,22 @@
     align-items: center;
     justify-content: center;
     padding: 48px;
+    background-image: url("<?= base_url('assets/img/login-bg.png') ?>");
+    background-size: cover;
+    /* Sesuaikan ukuran gambar agar menutupi area */
+    background-position: center;
+    /* Posisikan gambar di tengah */
+    background-repeat: no-repeat;
+    /* Jangan ulang gambar */
   }
 
+
   .formbold-form-wrapper {
+    background: rgba(255, 255, 255, 0.6);
+    /* properti CSS lain */
     margin: 0 auto;
     max-width: 570px;
     width: 100%;
-    background: white;
     text-align: center;
     padding: 40px;
   }
