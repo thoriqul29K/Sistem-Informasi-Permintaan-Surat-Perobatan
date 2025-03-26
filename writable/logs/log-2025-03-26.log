@@ -65,3 +65,21 @@ DEBUG - 2025-03-26 00:37:42 --> AuthFilter triggered. Session ID:
 DEBUG - 2025-03-26 00:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-03-26 00:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-03-26 00:55:57 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:05:12 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:05:44 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:05:56 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:06:00 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:06:06 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:06:06 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-03-26 02:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:06:46 --> AuthFilter triggered. Session ID: 
+ERROR - 2025-03-26 02:07:09 --> Email gagal dikirim: SMTP Error: Could not connect to SMTP host. Failed to connect to serverSMTP server error: Failed to connect to server SMTP code: 10060 Additional SMTP info: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
