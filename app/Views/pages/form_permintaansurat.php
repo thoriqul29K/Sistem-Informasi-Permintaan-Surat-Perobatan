@@ -1,7 +1,5 @@
 <?= $this->include('layouts/header') ?>
 <div class="formbold-main-wrapper">
-  <!-- Author: FormBold Team -->
-  <!-- Learn More: https://formbold.com -->
   <div class="formbold-form-wrapper">
     <div class="logo-container">
       <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/logo BUMN.png') ?>" />
@@ -19,30 +17,43 @@
         <input type="text" name="nama_lengkap" id="nama_lengkap" class="formbold-form-input" required />
       </div>
 
-      <div class="formbold-input-flex">
-        <div>
-          <label for="email" class="formbold-form-label">Email</label>
-          <input type="email" name="email" id="email" class="formbold-form-input" required />
-        </div>
-        <div>
-          <label for="phone" class="formbold-form-label">Nomor HP</label>
-          <input type="text" name="phone" id="phone" class="formbold-form-input" required />
-        </div>
+      <div class="formbold-mb-3">
+        <label for="nama_keluarga" class="formbold-form-label">Nama Keluarga</label>
+        <input type="text" name="nama_keluarga" id="nama_keluarga" class="formbold-form-input" required />
       </div>
 
       <div class="formbold-mb-3">
-        <label for="nik" class="formbold-form-label">NIK</label>
-        <input type="text" name="nik" id="nik" class="formbold-form-input" required />
+        <label for="np" class="formbold-form-label">Nomor Pegawai (10 digit)</label>
+        <input type="number" name="np" id="np" class="formbold-form-input" required />
       </div>
 
       <div class="formbold-mb-3">
-        <label for="alamat" class="formbold-form-label">Alamat</label>
-        <input type="text" name="alamat" id="alamat" class="formbold-form-input" required />
+        <label for="umur" class="formbold-form-label">Umur</label>
+        <input type="number" name="umur" id="umur" class="formbold-form-input" required />
       </div>
 
       <div class="formbold-mb-3">
-        <label for="keterangan" class="formbold-form-label">Keterangan</label>
-        <input type="text" name="keterangan" id="keterangan" class="formbold-form-input" required />
+        <label for="jenis_kelamin" class="formbold-form-label">Jenis Kelamin</label>
+        <select name="jenis_kelamin" id="jenis_kelamin" class="formbold-form-input" required>
+          <option value="">-- Pilih Jenis Kelamin --</option>
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+        </select>
+      </div>
+
+      <div class="formbold-mb-3">
+        <label for="jenjang_jabatan" class="formbold-form-label">Jenjang Jabatan</label>
+        <input type="text" name="jenjang_jabatan" id="jenjang_jabatan" class="formbold-form-input" required />
+      </div>
+
+      <div class="formbold-mb-3">
+        <label for="rumah_sakit_dituju" class="formbold-form-label">Rumah Sakit yang Dituju</label>
+        <select name="rumah_sakit_dituju" id="rumah_sakit_dituju" class="formbold-form-input" required>
+          <option value="">-- Pilih Rumah Sakit --</option>
+          <option value="RS A">RS A</option>
+          <option value="RS B">RS B</option>
+          <option value="RS C">RS C</option>
+        </select>
       </div>
 
       <!-- Pesan yang ditampilkan tanpa reload halaman -->
@@ -52,7 +63,6 @@
 
       <button type="submit" class="formbold-btn">Kirim</button>
     </form>
-
   </div>
 </div>
 
@@ -69,27 +79,6 @@
     font-family: 'Inter', sans-serif;
   }
 
-  .formbold-mb-3 {
-    margin-bottom: 15px;
-  }
-
-  .formbold-relative {
-    position: relative;
-
-  }
-
-  .formbold-opacity-0 {
-    opacity: 0;
-  }
-
-  .formbold-stroke-current {
-    stroke: currentColor;
-  }
-
-  #supportCheckbox:checked~div span {
-    opacity: 1;
-  }
-
   .formbold-main-wrapper {
     display: flex;
     align-items: center;
@@ -97,17 +86,12 @@
     padding: 48px;
     background-image: url("<?= base_url('assets/img/login-bg.png') ?>");
     background-size: cover;
-    /* Sesuaikan ukuran gambar agar menutupi area */
     background-position: center;
-    /* Posisikan gambar di tengah */
     background-repeat: no-repeat;
-    /* Jangan ulang gambar */
   }
-
 
   .formbold-form-wrapper {
     background: rgba(255, 255, 255, 0.6);
-    /* properti CSS lain */
     margin: 0 auto;
     max-width: 570px;
     width: 100%;
@@ -139,14 +123,16 @@
     margin-top: 12px;
   }
 
-  .formbold-input-flex {
-    display: flex;
-    gap: 20px;
+  .formbold-mb-3 {
     margin-bottom: 15px;
   }
 
-  .formbold-input-flex>div {
-    width: 50%;
+  .formbold-form-label {
+    color: #536387;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
   }
 
   .formbold-form-input {
@@ -160,58 +146,11 @@
     font-size: 16px;
     color: #536387;
     outline: none;
-    resize: none;
   }
 
   .formbold-form-input:focus {
     border-color: #6a64f1;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-  }
-
-  .formbold-form-label {
-    color: #536387;
-    font-size: 14px;
-    line-height: 24px;
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .formbold-checkbox-label {
-    display: flex;
-    cursor: pointer;
-    user-select: none;
-    font-size: 16px;
-    line-height: 24px;
-    color: #536387;
-  }
-
-  .formbold-checkbox-label a {
-    margin-left: 5px;
-    color: #6a64f1;
-  }
-
-  .formbold-input-checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-  }
-
-  .formbold-checkbox-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    margin-right: 16px;
-    margin-top: 2px;
-    border: 0.7px solid #dde3ec;
-    border-radius: 3px;
   }
 
   .formbold-btn {
@@ -220,11 +159,9 @@
     padding: 14px 25px;
     border: none;
     font-weight: 500;
-    align-self: center;
     background-color: #6a64f1;
     color: white;
     cursor: pointer;
-    display: inline-block;
     margin-top: 25px;
   }
 
@@ -232,45 +169,31 @@
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
   }
 
-  .formbold-checkbox-wrapper {
-    text-align: center;
-  }
-
   .logo-container {
     display: flex;
     justify-content: center;
-    /* Untuk menengahkan secara horizontal */
     align-items: center;
-    /* Opsional, untuk menengahkan secara vertikal */
     gap: 20px;
-    /* Jarak antar gambar */
     margin-bottom: 20px;
-    /* Jarak antara container logo dengan form, jika diperlukan */
   }
 
   .logo-container .formbold-img {
     display: inline-block;
     margin: 0;
-    /* margin dihapus agar flex container yang mengatur jarak */
   }
 </style>
-<!-- JavaScript untuk meng-handle AJAX form submission -->
 <script>
   document.getElementById('formPermintaan').addEventListener('submit', function(e) {
-    e.preventDefault(); // Mencegah reload halaman
-
+    e.preventDefault();
     var form = e.target;
     var formData = new FormData(form);
-
     fetch(form.action, {
         method: form.method,
         body: formData,
       })
       .then(response => response.text())
       .then(data => {
-        // Tampilkan pesan sukses
         document.getElementById('message').style.display = 'block';
-        // Opsional: Reset form jika diperlukan
         form.reset();
       })
       .catch(error => {

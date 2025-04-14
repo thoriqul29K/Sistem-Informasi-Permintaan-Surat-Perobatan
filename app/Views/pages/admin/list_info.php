@@ -10,20 +10,21 @@
 <body>
     <div class="container mt-5">
         <h2>List Informasi Permintaan Surat</h2>
-        <!-- Menampilkan pesan flash jika ada -->
         <?php if (session()->getFlashdata('message')): ?>
             <div class="alert alert-success">
                 <?= session()->getFlashdata('message') ?>
             </div>
         <?php endif; ?>
-
         <table class="table table-bordered mt-3">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Nama</th>
-                    <th>Email</th>
-                    <th>NIK</th>
+                    <th>Nama Lengkap</th>
+                    <th>Nama Keluarga</th>
+                    <th>NP</th>
+                    <th>Umur</th>
+                    <th>Jenjang Jabatan</th>
+                    <th>Rumah Sakit</th>
                     <th>Status</th>
                     <th>Aksi</th>
                 </tr>
@@ -33,8 +34,11 @@
                     <tr>
                         <td><?= $info['id'] ?></td>
                         <td><?= $info['nama_lengkap'] ?></td>
-                        <td><?= $info['email'] ?></td>
-                        <td><?= $info['nik'] ?></td>
+                        <td><?= $info['nama_keluarga'] ?></td>
+                        <td><?= $info['np'] ?></td>
+                        <td><?= $info['umur'] ?> tahun</td>
+                        <td><?= $info['jenjang_jabatan'] ?></td>
+                        <td><?= $info['rumah_sakit_dituju'] ?></td>
                         <td><?= $info['status'] ?></td>
                         <td>
                             <a href="<?= base_url('/admin/detail/' . $info['id']) ?>" class="btn btn-primary btn-sm">

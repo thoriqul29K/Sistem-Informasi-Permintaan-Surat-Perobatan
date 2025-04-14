@@ -69,7 +69,7 @@ class AdminController extends BaseController
         file_put_contents($filePath, $output);
 
         // Kirim email ke pengguna
-        $this->sendEmail($info['email'], $filePath);
+        //$this->sendEmail($info['email'], $filePath);
 
         return $this->response->download($filePath, null);
     }

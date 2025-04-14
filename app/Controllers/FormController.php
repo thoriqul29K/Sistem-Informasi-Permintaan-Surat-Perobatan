@@ -17,16 +17,18 @@ class FormController extends BaseController
         $formModel = new FormModel();
 
         $data = [
-            'nama_lengkap' => $this->request->getPost('nama_lengkap'),
-            'email'        => $this->request->getPost('email'),
-            'phone'        => $this->request->getPost('phone'),
-            'nik'          => $this->request->getPost('nik'),
-            'alamat'       => $this->request->getPost('alamat'),
-            'keterangan'   => $this->request->getPost('keterangan'),
-            'status'       => 'Menunggu' // Default status
+            'nama_lengkap'       => $this->request->getPost('nama_lengkap'),
+            'umur'               => $this->request->getPost('umur'),
+            'jenis_kelamin'      => $this->request->getPost('jenis_kelamin'),
+            'nama_keluarga'      => $this->request->getPost('nama_keluarga'),
+            'np'                 => $this->request->getPost('np'),
+            'jenjang_jabatan'    => $this->request->getPost('jenjang_jabatan'),
+            'rumah_sakit_dituju' => $this->request->getPost('rumah_sakit_dituju'),
+            'status'             => 'Menunggu'
         ];
-
         $formModel->insert($data);
+
+
         return redirect()->to('/form-permintaan-surat');
     }
 }
