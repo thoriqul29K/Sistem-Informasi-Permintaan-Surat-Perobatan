@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2025 at 02:47 AM
+-- Generation Time: Mar 26, 2025 at 02:01 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -29,13 +29,12 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `form_data` (
   `id` int(11) NOT NULL,
-  `nama_lengkap` varchar(70) NOT NULL,
-  `nama_keluarga` varchar(70) NOT NULL,
-  `np` int(10) UNSIGNED NOT NULL,
-  `umur` int(10) NOT NULL,
-  `jenis_kelamin` enum('Laki-laki','Perempuan') NOT NULL,
-  `jenjang_jabatan` varchar(70) NOT NULL,
-  `rumah_sakit_dituju` varchar(50) NOT NULL,
+  `nama_lengkap` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `nik` varchar(20) NOT NULL,
+  `alamat` text NOT NULL,
+  `keterangan` text NOT NULL,
   `status` enum('Menunggu','Disetujui') DEFAULT 'Menunggu',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `approved_at` datetime DEFAULT NULL
@@ -45,14 +44,13 @@ CREATE TABLE `form_data` (
 -- Dumping data for table `form_data`
 --
 
-INSERT INTO `form_data` (`id`, `nama_lengkap`, `nama_keluarga`, `np`, `umur`, `jenis_kelamin`, `jenjang_jabatan`, `rumah_sakit_dituju`, `status`, `created_at`, `approved_at`) VALUES
-(7, 'M. Rizki', 'Rizki Abdurrahman', 1937462818, 21, 'Laki-laki', 'Mahasiswa Magang/Humas', 'B', 'Disetujui', '2025-04-15 00:05:54', NULL),
-(8, 'Muhammad Thoriqul Kirom', 'Muhammad Hanif', 3948574921, 19, 'Laki-laki', 'Mahasiswa Magang/Humas', 'Siloam', 'Disetujui', '2025-04-15 00:08:54', NULL),
-(9, 'Muhammad Hafiz', 'Bintang Ramadhan', 2838023020, 21, 'Laki-laki', 'Mahasiswa Magang/Humas', 'B', 'Menunggu', '2025-04-15 00:13:18', NULL),
-(10, 'Bintang Ramadhan', 'Chesya Waliana', 1837491901, 20, 'Laki-laki', 'Mahasiswa Magang/Humas', 'C', 'Menunggu', '2025-04-15 00:14:02', NULL),
-(11, 'Fahmi Zaki Muhammad', 'Riwandi Apridiansyah', 4294967295, 22, 'Laki-laki', 'Mahasiswa Magang/SDM', 'Siloam', 'Menunggu', '2025-04-15 00:15:11', NULL),
-(12, 'Riwandi Apridiansyah', 'Cindy Laurensia P Tampubolon', 2736491820, 20, 'Laki-laki', 'Mahasiswa Magang/Keuangan', 'C', 'Menunggu', '2025-04-15 00:17:49', NULL),
-(13, 'Kaiser Wilhelm II', 'Kaiser Franz Ferdinand', 1234567890, 150, 'Laki-laki', 'Kaisar', 'Siloam', 'Menunggu', '2025-04-15 00:38:18', NULL);
+INSERT INTO `form_data` (`id`, `nama_lengkap`, `email`, `phone`, `nik`, `alamat`, `keterangan`, `status`, `created_at`, `approved_at`) VALUES
+(4, 'Fahmi Zaki Muhammad', 'fahmimen@gmail.com', '6282377126009', '01293102371312', 'Rumah Fahmi', 'Malas', 'Disetujui', '2025-03-18 05:20:11', NULL),
+(5, 'Muhammad Thoriqul Kirom', 'thoriqul29@gmail.com', '085832560838', '01293102371312', 'Jln Letnan Murod, Tlg Ratu, Lrg Sakura No 06', 'Sakit', 'Disetujui', '2025-03-18 05:31:00', NULL),
+(9, 'tessatu', 'thoriqul29@gmail.com', '98765432345', '13431412341351', 'df', 'aef', 'Menunggu', '2025-03-18 06:19:54', NULL),
+(12, 'Fahmi men', 'fahmimen@gmail.com', '9283892939', '92747293791428', 'Mesir', 'Iejdiejeh', 'Menunggu', '2025-03-20 03:38:56', NULL),
+(14, 'Krasnaya Armiya', 'marsmarsvperyod@gmail.com', '98239283', '91012730182371', 'revoyensovyet nas voy zovyot', 'ved ot taygi da britanski morej krasnaya armiya vseh silney', 'Menunggu', '2025-03-25 23:37:41', NULL),
+(15, 'Muhammad Hafiz', 'hafiz@gmail.com', '089812836491', '1283648291727492', 'tessatu', 'tesdua', 'Menunggu', '2025-03-26 00:37:14', NULL);
 
 -- --------------------------------------------------------
 
@@ -113,7 +111,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `form_data`
 --
 ALTER TABLE `form_data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `users`

@@ -61,5 +61,17 @@
         </form>
     </div>
 </body>
+<footer>
+    <script>
+        // Jika ada flash message tertentu, misalnya cek pesan download
+        <?php if (session()->getFlashdata('message') && strpos(session()->getFlashdata('message'), 'PDF sedang diunduh') !== false): ?>
+            // Buat iframe tersembunyi untuk trigger download PDF
+            var iframe = document.createElement('iframe');
+            iframe.style.display = 'none';
+            iframe.src = "<?= base_url('admin/generate-pdf/' . $info['id']) ?>";
+            document.body.appendChild(iframe);
+        <?php endif; ?>
+    </script>
+</footer>
 
 </html>

@@ -44,9 +44,43 @@ class AdminController extends BaseController
             'approved_at' => date('Y-m-d H:i:s')
         ]);
 
-        // Redirect kembali ke halaman detail dengan flash message
-        return redirect()->to('/admin/detail/' . $id)->with('message', 'Permintaan surat sudah diverifikasi.');
+        // Panggil processGeneratePdf() untuk menghasilkan file dan menyimpannya (tanpa return download response)
+        $this->processGeneratePdf($id);
+        // Redirect ke halaman detail dengan flash message
+        return redirect()->to('/admin/detail/' . $id)
+            ->with('message', 'Permintaan surat sudah diverifikasi. PDF sedang diunduh.');
     }
+
+
+
+    private function processGeneratePdf($id)
+    {
+        $info = $this->formModel->find($id);
+        if (!$info) {
+            return false;
+        }
+
+        $dompdf = new Dompdf();
+        $html = view('pages/admin/template_surat', ['info' => $info]);
+        $dompdf->loadHtml($html);
+        $dompdf->setPaper('A4', 'portrait');
+        $dompdf->render();
+        $output = $dompdf->output();
+
+        $filePath = WRITEPATH . 'uploads/surat_' . $id . '.pdf';
+        file_put_contents($filePath, $output);
+
+        // Kirim email ke pengguna
+        //$this->sendEmail($info['email'], $filePath);
+
+        log_message('info', 'PDF disimpan di: ' . $filePath);
+
+        // Jangan mengembalikan respons download di sini
+        return $filePath;
+    }
+
+
+
 
 
 
@@ -68,11 +102,12 @@ class AdminController extends BaseController
         $filePath = WRITEPATH . 'uploads/surat_' . $id . '.pdf';
         file_put_contents($filePath, $output);
 
-        // Kirim email ke pengguna
+        // Kirim email jika perlu
         //$this->sendEmail($info['email'], $filePath);
 
         return $this->response->download($filePath, null);
     }
+
 
 
     private function sendEmail($recipient, $filePath)

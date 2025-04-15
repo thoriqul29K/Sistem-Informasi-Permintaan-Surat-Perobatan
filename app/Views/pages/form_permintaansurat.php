@@ -23,8 +23,15 @@
       </div>
 
       <div class="formbold-mb-3">
-        <label for="np" class="formbold-form-label">Nomor Pegawai (10 digit)</label>
-        <input type="number" name="np" id="np" class="formbold-form-input" required />
+        <label for="np" class="formbold-form-label">Nomor Pegawai</label>
+        <input
+          type="number"
+          name="np"
+          id="np"
+          class="formbold-form-input"
+          required
+          onkeydown="if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(event.key)) event.preventDefault();" />
+
       </div>
 
       <div class="formbold-mb-3">
@@ -50,13 +57,13 @@
         <label for="rumah_sakit_dituju" class="formbold-form-label">Rumah Sakit yang Dituju</label>
         <select name="rumah_sakit_dituju" id="rumah_sakit_dituju" class="formbold-form-input" required>
           <option value="">-- Pilih Rumah Sakit --</option>
-          <option value="RS A">RS A</option>
-          <option value="RS B">RS B</option>
-          <option value="RS C">RS C</option>
+          <option value="Siloam">Rumah Sakit Siloam</option>
+          <option value="A">RS A</option>
+          <option value="B">RS B</option>
+          <option value="C">RS C</option>
         </select>
       </div>
 
-      <!-- Pesan yang ditampilkan tanpa reload halaman -->
       <div id="message" style="display: none; margin-top: 20px;" class="alert alert-success">
         <p style="color:red">Informasi yang diisi telah berhasil terkirim</p>
       </div>
@@ -181,6 +188,18 @@
     display: inline-block;
     margin: 0;
   }
+
+  /* Hapus spin button pada Chrome, Safari, Edge, Opera */
+  #np::-webkit-outer-spin-button,
+  #np::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Hapus spin button pada Firefox */
+  #np {
+    -moz-appearance: textfield;
+  }
 </style>
 <script>
   document.getElementById('formPermintaan').addEventListener('submit', function(e) {
@@ -199,5 +218,9 @@
       .catch(error => {
         console.error('Error:', error);
       });
+  });
+  // Menonaktifkan fungsi scroll (wheel) pada input np
+  document.getElementById('np').addEventListener('wheel', function(e) {
+    e.preventDefault();
   });
 </script>

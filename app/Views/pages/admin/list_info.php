@@ -38,7 +38,7 @@
                         <td><?= $info['np'] ?></td>
                         <td><?= $info['umur'] ?> tahun</td>
                         <td><?= $info['jenjang_jabatan'] ?></td>
-                        <td><?= $info['rumah_sakit_dituju'] ?></td>
+                        <td>Rumah Sakit <?= $info['rumah_sakit_dituju'] ?></td>
                         <td><?= $info['status'] ?></td>
                         <td>
                             <a href="<?= base_url('/admin/detail/' . $info['id']) ?>" class="btn btn-primary btn-sm">

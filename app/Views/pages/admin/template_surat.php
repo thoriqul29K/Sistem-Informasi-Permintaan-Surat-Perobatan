@@ -76,14 +76,14 @@ function convertMonthToRoman($month)
         <p><strong>Tanggal:</strong> <?= date('d-m-Y') ?></p>
         <hr>
         <p>Yang Terhormat,</p>
-        <p> Direktur Rumah Sakit Siloam</p>
+        <p> Direktur Rumah Sakit <?= esc($info['rumah_sakit_dituju']) ?></p>
         <p>Jl. POM IX</p>
         <p>di-</p>
         <p>Palembang</p>
         <p><br>Yang bertanda tangan dibawah ini, AVP SDM, Umum, Keuangan dan CSR PTBA, Tbk Unit Dermaga Kertapati Palembang Menerangkan bahwa:
         </p>
         <p>Nama: <?= esc($info['nama_lengkap']) ?></p>
-        <p>Umur/Jenis Kelamin: <?= esc($info['umur']) ?>/<?= esc($info['jenis_kelamin']) ?></p>
+        <p>Umur/Jenis Kelamin: <?= esc($info['umur']) ?> Tahun/<?= esc($info['jenis_kelamin']) ?></p>
         <p>Nama Keluarga/NP: <?= esc($info['nama_keluarga']) ?>/<?= esc($info['np']) ?></p>
         <p>Jenjang Jabatan: <?= esc($info['jenjang_jabatan']) ?></p>
         <br>
