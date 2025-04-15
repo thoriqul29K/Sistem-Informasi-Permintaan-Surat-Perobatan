@@ -127,8 +127,8 @@ function convertMonthToRoman($month)
 
 <body>
     <div class="header">
-        <img src="<?= base_url('assets/img/Logo PTBA 2.png') ?>" alt="" width="5 cm" height="2 cm">
-        <p>Palembang, </p>
+        <h1>Surat Perobatan</h1>
+        <p>PT. Bukit Asam Tbk. Unit Dermaga Kertapati</p>
     </div>
 
     <div class="content">
