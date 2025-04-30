@@ -163,7 +163,7 @@ function convertMonthToRoman($month)
             <span class="label"><strong>Perihal</strong></span>: <strong><i>Jaminan Biaya Perawatan / Pengobatan</i></strong>
         </div>
         <div class="field">
-            <span class="label"></span> <strong>An. <?= esc($info['nama_lengkap']) ?></strong>
+            <span class="label"></span> <strong>An. <?= esc($info['nama_lengkap']) ?> Keluarga <?= esc($info['nama_keluarga']) ?> (NP. <?= esc($info['np']) ?>) </strong>
         </div>
         <hr>
         <p>Yang Terhormat,</p>
