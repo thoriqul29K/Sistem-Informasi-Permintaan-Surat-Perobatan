@@ -126,9 +126,9 @@ function convertMonthToRoman($month)
 </head>
 
 <body>
-    <div class="header">
-        <h1>Surat Perobatan</h1>
-        <p>PT. Bukit Asam Tbk. Unit Dermaga Kertapati</p>
+    <div class="header" style="text-align: right;">
+        <img src="<?= esc($logoDataUri) ?>" alt="Logo Bukit Asam" style="width:200px;">
+        <p>Palembang, <?= date('d-m-Y') ?></p>
     </div>
 
     <div class="content">
@@ -178,7 +178,7 @@ function convertMonthToRoman($month)
             <li>Surat Jaminan ini hanya berlaku di RS yang ada perjanjian kerjasama dengan PT Bukit Asam, Tbk.</li>
             <li>Surat jaminan ini hanya <b><i>dipergunakan untuk pembayaran selisih</i></b> bila biaya perawatan pasien melebihi budget maksimal BPJS. Selisih biaya seperti jasa dokter, kamar, dan obat-obatan dapat ditagihkan ke PT Bukit Asam, Tbk.</li>
             <li>Bila tidak dapat dicover oleh BPJS, maka dapat ditagihkan secara penuh.</li>
-            <li>Beban Biaya:</li>
+            <li>Beban Biaya: 43291</li>
             <li>Ybs. diwajibkan menandatangani Nota Biaya Perawatan.</li>
             <li>Surat Jaminan ini berlaku 3 (tiga) hari <b><i>sejak ditandatangani</i></b>.</li>
             <li>Jika pasien dirujuk ke dokter lain pada RS yang sama, dapat menggunakan <b><i>Surat Jaminan Pertama</i></b> dengan batas waktu 3 hari sejak ditandatangani.</li>

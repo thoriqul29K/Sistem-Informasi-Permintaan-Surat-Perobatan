@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\FormModel;
 use Dompdf\Dompdf;
+use Dompdf\Options;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -46,6 +47,7 @@ class AdminController extends BaseController
 
         // Panggil processGeneratePdf() untuk menghasilkan file dan menyimpannya (tanpa return download response)
         $this->processGeneratePdf($id);
+
         // Redirect ke halaman detail dengan flash message
         return redirect()->to('/admin/detail/' . $id)
             ->with('message', 'Permintaan surat sudah diverifikasi. PDF sedang diunduh.');
@@ -60,28 +62,37 @@ class AdminController extends BaseController
             return false;
         }
 
-        $dompdf = new Dompdf();
-        $html = view('pages/admin/template_surat', ['info' => $info]);
+        // 1) Siapkan Base64 untuk logo
+        $path      = FCPATH . 'assets/img/logo_ptba2.png';
+        $imageData = file_get_contents($path);
+        $finfo     = new \finfo(FILEINFO_MIME_TYPE);
+        $mime      = $finfo->buffer($imageData);
+        $base64    = base64_encode($imageData);
+        $dataUri   = 'data:' . $mime . ';base64,' . $base64;
+
+        // 2) Siapkan array data untuk view
+        $viewData = [
+            'info'        => $info,
+            'logoDataUri' => $dataUri,
+        ];
+
+        // 3) Load HTML dengan data yang lengkap
+        $html = view('pages/admin/template_surat', $viewData);
+
+        // 4) Render PDF
+        $options = new \Dompdf\Options();
+        $options->set('isRemoteEnabled', true);
+        $dompdf = new \Dompdf\Dompdf($options);
         $dompdf->loadHtml($html);
         $dompdf->setPaper('A4', 'portrait');
         $dompdf->render();
-        $output = $dompdf->output();
 
+        // 5) Simpan file
         $filePath = WRITEPATH . 'uploads/surat_' . $id . '.pdf';
-        file_put_contents($filePath, $output);
+        file_put_contents($filePath, $dompdf->output());
 
-        // Kirim email ke pengguna
-        //$this->sendEmail($info['email'], $filePath);
-
-        log_message('info', 'PDF disimpan di: ' . $filePath);
-
-        // Jangan mengembalikan respons download di sini
         return $filePath;
     }
-
-
-
-
 
 
 
@@ -92,19 +103,30 @@ class AdminController extends BaseController
             return redirect()->to('/list-info')->with('error', 'Data tidak ditemukan.');
         }
 
-        $dompdf = new Dompdf();
-        $html = view('pages/admin/template_surat', ['info' => $info]);
-        $dompdf->loadHtml($html);
+        // Siapkan Base64 sama seperti di processGeneratePdf
+        $path      = FCPATH . 'assets/img/Logo PTBA 750x140px.png';
+        $imageData = file_get_contents($path);
+        $finfo     = new \finfo(FILEINFO_MIME_TYPE);
+        $mime      = $finfo->buffer($imageData);
+        $base64    = base64_encode($imageData);
+        $dataUri   = 'data:' . $mime . ';base64,' . $base64;
+
+        $viewData = [
+            'info'        => $info,
+            'logoDataUri' => $dataUri,
+        ];
+
+        // Render HTML dengan data lengkap
+        $options = new \Dompdf\Options();
+        $options->set('isRemoteEnabled', true);
+        $dompdf = new \Dompdf\Dompdf($options);
+        $dompdf->loadHtml(view('pages/admin/template_surat', $viewData));
         $dompdf->setPaper('A4', 'portrait');
         $dompdf->render();
-        $output = $dompdf->output();
 
+        // Simpan & kirim download
         $filePath = WRITEPATH . 'uploads/surat_' . $id . '.pdf';
-        file_put_contents($filePath, $output);
-
-        // Kirim email jika perlu
-        //$this->sendEmail($info['email'], $filePath);
-
+        file_put_contents($filePath, $dompdf->output());
         return $this->response->download($filePath, null);
     }
 

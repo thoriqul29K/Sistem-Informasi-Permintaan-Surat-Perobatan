@@ -1,0 +1,549 @@
+DEBUG - 2025-04-30 00:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 00:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 00:52:10 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 00:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 00:52:16 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 00:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 00:52:18 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 00:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 00:57:51 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:04:01 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:04:07 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:05:26 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:05:49 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:06:56 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:09:15 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:09:50 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:17:18 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:17:33 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:36:27 --> AuthFilter triggered. Session ID: 
+CRITICAL - 2025-04-30 01:36:29 --> Exception: The PHP GD extension is required, but is not installed.
+[Method: GET, Route: admin/generate-pdf/1]
+in VENDORPATH\dompdf\dompdf\lib\Cpdf.php on line 6091.
+ 1 VENDORPATH\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_93E3.tmp', 477.7603149606299, 724.3703149606299, 75.0, 75.0)
+ 2 VENDORPATH\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_93E3.tmp', 477.7603149606299, 42.51968503937008, 75.0, 75.0, 'normal')
+ 3 VENDORPATH\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+ 4 VENDORPATH\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+ 5 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+ 6 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 7 VENDORPATH\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 8 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(null)
+ 9 VENDORPATH\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+10 APPPATH\Controllers\AdminController.php(105): Dompdf\Dompdf->render()
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+CRITICAL - 2025-04-30 01:36:34 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+【Previous Exception】
+Exception
+The PHP GD extension is required, but is not installed.
+#0 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo...', 477.76031496063, 724.37031496063, 75.0, 75.0)
+#1 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo...', 477.76031496063, 42.51968503937, 75.0, 75.0, 'normal')
+#2 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+#3 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+#4 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+#5 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#6 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#7 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(NULL)
+#8 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#9 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\app\Controllers\AdminController.php(105): Dompdf\Dompdf->render()
+#10 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+#11 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#12 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#14 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\rewrite.php(44): require_once('C:\\PT Bukit Asa...')
+#17 {main}
+[Method: GET, Route: admin/generate-pdf/1]
+in APPPATH\Views\errors\html\error_exception.php on line 131.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-04-30 01:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:36:34 --> AuthFilter triggered. Session ID: 
+CRITICAL - 2025-04-30 01:36:34 --> Exception: The PHP GD extension is required, but is not installed.
+[Method: GET, Route: admin/generate-pdf/1]
+in VENDORPATH\dompdf\dompdf\lib\Cpdf.php on line 6091.
+ 1 VENDORPATH\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_AAA8.tmp', 477.7603149606299, 724.3703149606299, 75.0, 75.0)
+ 2 VENDORPATH\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_AAA8.tmp', 477.7603149606299, 42.51968503937008, 75.0, 75.0, 'normal')
+ 3 VENDORPATH\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+ 4 VENDORPATH\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+ 5 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+ 6 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 7 VENDORPATH\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 8 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(null)
+ 9 VENDORPATH\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+10 APPPATH\Controllers\AdminController.php(105): Dompdf\Dompdf->render()
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+CRITICAL - 2025-04-30 01:36:38 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 257953792 bytes)
+【Previous Exception】
+Exception
+The PHP GD extension is required, but is not installed.
+#0 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo...', 477.76031496063, 724.37031496063, 75.0, 75.0)
+#1 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo...', 477.76031496063, 42.51968503937, 75.0, 75.0, 'normal')
+#2 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+#3 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+#4 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+#5 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#6 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#7 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(NULL)
+#8 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#9 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\app\Controllers\AdminController.php(105): Dompdf\Dompdf->render()
+#10 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+#11 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#12 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#14 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\rewrite.php(44): require_once('C:\\PT Bukit Asa...')
+#17 {main}
+[Method: GET, Route: admin/generate-pdf/1]
+in APPPATH\Views\errors\html\error_exception.php on line 131.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-04-30 01:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:48:40 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:48:42 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:48:43 --> AuthFilter triggered. Session ID: 
+CRITICAL - 2025-04-30 01:48:43 --> Exception: The PHP GD extension is required, but is not installed.
+[Method: GET, Route: admin/generate-pdf/1]
+in VENDORPATH\dompdf\dompdf\lib\Cpdf.php on line 6091.
+ 1 VENDORPATH\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_C977.tmp', 477.7603149606299, 724.3703149606299, 75.0, 75.0)
+ 2 VENDORPATH\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_C977.tmp', 477.7603149606299, 42.51968503937008, 75.0, 75.0, 'normal')
+ 3 VENDORPATH\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+ 4 VENDORPATH\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+ 5 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+ 6 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 7 VENDORPATH\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 8 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(null)
+ 9 VENDORPATH\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+10 APPPATH\Controllers\AdminController.php(127): Dompdf\Dompdf->render()
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+CRITICAL - 2025-04-30 01:48:48 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+【Previous Exception】
+Exception
+The PHP GD extension is required, but is not installed.
+#0 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo...', 477.76031496063, 724.37031496063, 75.0, 75.0)
+#1 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo...', 477.76031496063, 42.51968503937, 75.0, 75.0, 'normal')
+#2 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+#3 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+#4 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+#5 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#6 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#7 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(NULL)
+#8 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#9 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\app\Controllers\AdminController.php(127): Dompdf\Dompdf->render()
+#10 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+#11 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#12 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#14 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\rewrite.php(44): require_once('C:\\PT Bukit Asa...')
+#17 {main}
+[Method: GET, Route: admin/generate-pdf/1]
+in APPPATH\Views\errors\html\error_exception.php on line 131.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-04-30 01:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:49:54 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:49:56 --> AuthFilter triggered. Session ID: 
+CRITICAL - 2025-04-30 01:49:56 --> ErrorException: Undefined variable $logoDataUri
+[Method: GET, Route: admin/generate-pdf/1]
+in APPPATH\Views\pages\admin\template_surat.php on line 130.
+ 1 APPPATH\Views\pages\admin\template_surat.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logoDataUri', 'C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\app\\Views\\pages\\admin\\template_surat.php', 130)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\app\\Views\\pages\\admin\\template_surat.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/admin/template_surat', [], true)
+ 5 APPPATH\Controllers\AdminController.php(124): view('pages/admin/template_surat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-04-30 01:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:52:57 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:52:59 --> AuthFilter triggered. Session ID: 
+CRITICAL - 2025-04-30 01:52:59 --> ErrorException: Undefined variable $logoDataUri
+[Method: GET, Route: admin/generate-pdf/1]
+in APPPATH\Views\pages\admin\template_surat.php on line 130.
+ 1 APPPATH\Views\pages\admin\template_surat.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logoDataUri', 'C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\app\\Views\\pages\\admin\\template_surat.php', 130)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\app\\Views\\pages\\admin\\template_surat.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/admin/template_surat', [], true)
+ 5 APPPATH\Controllers\AdminController.php(110): view('pages/admin/template_surat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-04-30 01:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:55:22 --> AuthFilter triggered. Session ID: 
+CRITICAL - 2025-04-30 01:55:22 --> ErrorException: file_get_contents(C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\public\assets/img/logo_ptba2.png): Failed to open stream: No such file or directory
+[Method: GET, Route: admin/generate-pdf/1]
+in APPPATH\Controllers\AdminController.php on line 108.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\assets/img/logo_ptba2.png): Failed to open stream: No such file or directory', 'C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\app\\Controllers\\AdminController.php', 108)
+ 2 APPPATH\Controllers\AdminController.php(108): file_get_contents('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\assets/img/logo_ptba2.png')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-04-30 01:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:56:33 --> AuthFilter triggered. Session ID: 
+CRITICAL - 2025-04-30 01:56:33 --> Exception: The PHP GD extension is required, but is not installed.
+[Method: GET, Route: admin/generate-pdf/1]
+in VENDORPATH\dompdf\dompdf\lib\Cpdf.php on line 6091.
+ 1 VENDORPATH\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_F6B0.tmp', 477.7603149606299, 724.3703149606299, 75.0, 75.0)
+ 2 VENDORPATH\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_F6B0.tmp', 477.7603149606299, 42.51968503937008, 75.0, 75.0, 'normal')
+ 3 VENDORPATH\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+ 4 VENDORPATH\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+ 5 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+ 6 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 7 VENDORPATH\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 8 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(null)
+ 9 VENDORPATH\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+10 APPPATH\Controllers\AdminController.php(125): Dompdf\Dompdf->render()
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+CRITICAL - 2025-04-30 01:56:38 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+【Previous Exception】
+Exception
+The PHP GD extension is required, but is not installed.
+#0 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo...', 477.76031496063, 724.37031496063, 75.0, 75.0)
+#1 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo...', 477.76031496063, 42.51968503937, 75.0, 75.0, 'normal')
+#2 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+#3 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+#4 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+#5 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#6 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#7 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(NULL)
+#8 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#9 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\app\Controllers\AdminController.php(125): Dompdf\Dompdf->render()
+#10 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+#11 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#12 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#14 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\rewrite.php(44): require_once('C:\\PT Bukit Asa...')
+#17 {main}
+[Method: GET, Route: admin/generate-pdf/1]
+in APPPATH\Views\errors\html\error_exception.php on line 131.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-04-30 01:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:59:14 --> AuthFilter triggered. Session ID: 
+CRITICAL - 2025-04-30 01:59:15 --> Exception: The PHP GD extension is required, but is not installed.
+[Method: GET, Route: admin/generate-pdf/1]
+in VENDORPATH\dompdf\dompdf\lib\Cpdf.php on line 6091.
+ 1 VENDORPATH\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_6C06.tmp', 477.7603149606299, 724.3703149606299, 75.0, 75.0)
+ 2 VENDORPATH\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_6C06.tmp', 477.7603149606299, 42.51968503937008, 75.0, 75.0, 'normal')
+ 3 VENDORPATH\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+ 4 VENDORPATH\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+ 5 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+ 6 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 7 VENDORPATH\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 8 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(null)
+ 9 VENDORPATH\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+10 APPPATH\Controllers\AdminController.php(125): Dompdf\Dompdf->render()
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+CRITICAL - 2025-04-30 01:59:20 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+【Previous Exception】
+Exception
+The PHP GD extension is required, but is not installed.
+#0 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo...', 477.76031496063, 724.37031496063, 75.0, 75.0)
+#1 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo...', 477.76031496063, 42.51968503937, 75.0, 75.0, 'normal')
+#2 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+#3 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+#4 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+#5 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#6 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#7 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(NULL)
+#8 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#9 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\app\Controllers\AdminController.php(125): Dompdf\Dompdf->render()
+#10 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+#11 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#12 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#14 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\rewrite.php(44): require_once('C:\\PT Bukit Asa...')
+#17 {main}
+[Method: GET, Route: admin/generate-pdf/1]
+in APPPATH\Views\errors\html\error_exception.php on line 131.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-04-30 01:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:59:40 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 01:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 01:59:41 --> AuthFilter triggered. Session ID: 
+CRITICAL - 2025-04-30 01:59:42 --> Exception: The PHP GD extension is required, but is not installed.
+[Method: GET, Route: admin/generate-pdf/1]
+in VENDORPATH\dompdf\dompdf\lib\Cpdf.php on line 6091.
+ 1 VENDORPATH\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_D531.tmp', 477.7603149606299, 724.3703149606299, 75.0, 75.0)
+ 2 VENDORPATH\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_D531.tmp', 477.7603149606299, 42.51968503937008, 75.0, 75.0, 'normal')
+ 3 VENDORPATH\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+ 4 VENDORPATH\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+ 5 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+ 6 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 7 VENDORPATH\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 8 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(null)
+ 9 VENDORPATH\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+10 APPPATH\Controllers\AdminController.php(125): Dompdf\Dompdf->render()
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+CRITICAL - 2025-04-30 01:59:46 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+【Previous Exception】
+Exception
+The PHP GD extension is required, but is not installed.
+#0 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo...', 477.76031496063, 724.37031496063, 75.0, 75.0)
+#1 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo...', 477.76031496063, 42.51968503937, 75.0, 75.0, 'normal')
+#2 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+#3 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+#4 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+#5 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#6 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#7 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(NULL)
+#8 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#9 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\app\Controllers\AdminController.php(125): Dompdf\Dompdf->render()
+#10 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+#11 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#12 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#14 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\rewrite.php(44): require_once('C:\\PT Bukit Asa...')
+#17 {main}
+[Method: GET, Route: admin/generate-pdf/1]
+in APPPATH\Views\errors\html\error_exception.php on line 131.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-04-30 02:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:03:44 --> AuthFilter triggered. Session ID: 
+CRITICAL - 2025-04-30 02:03:44 --> Exception: The PHP GD extension is required, but is not installed.
+[Method: GET, Route: admin/generate-pdf/1]
+in VENDORPATH\dompdf\dompdf\lib\Cpdf.php on line 6091.
+ 1 VENDORPATH\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_8A5A.tmp', 477.7603149606299, 724.3703149606299, 75.0, 75.0)
+ 2 VENDORPATH\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_8A5A.tmp', 477.7603149606299, 42.51968503937008, 75.0, 75.0, 'normal')
+ 3 VENDORPATH\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+ 4 VENDORPATH\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+ 5 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+ 6 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 7 VENDORPATH\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 8 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(null)
+ 9 VENDORPATH\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+10 APPPATH\Controllers\AdminController.php(125): Dompdf\Dompdf->render()
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+CRITICAL - 2025-04-30 02:03:49 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+【Previous Exception】
+Exception
+The PHP GD extension is required, but is not installed.
+#0 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo...', 477.76031496063, 724.37031496063, 75.0, 75.0)
+#1 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo...', 477.76031496063, 42.51968503937, 75.0, 75.0, 'normal')
+#2 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+#3 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+#4 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+#5 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#6 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#7 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(NULL)
+#8 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#9 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\app\Controllers\AdminController.php(125): Dompdf\Dompdf->render()
+#10 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+#11 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#12 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#14 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\rewrite.php(44): require_once('C:\\PT Bukit Asa...')
+#17 {main}
+[Method: GET, Route: admin/generate-pdf/1]
+in APPPATH\Views\errors\html\error_exception.php on line 131.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-04-30 02:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:03:52 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:03:53 --> AuthFilter triggered. Session ID: 
+CRITICAL - 2025-04-30 02:03:53 --> Exception: The PHP GD extension is required, but is not installed.
+[Method: GET, Route: admin/generate-pdf/1]
+in VENDORPATH\dompdf\dompdf\lib\Cpdf.php on line 6091.
+ 1 VENDORPATH\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_AD93.tmp', 477.7603149606299, 724.3703149606299, 75.0, 75.0)
+ 2 VENDORPATH\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_AD93.tmp', 477.7603149606299, 42.51968503937008, 75.0, 75.0, 'normal')
+ 3 VENDORPATH\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+ 4 VENDORPATH\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+ 5 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+ 6 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 7 VENDORPATH\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 8 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(null)
+ 9 VENDORPATH\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+10 APPPATH\Controllers\AdminController.php(125): Dompdf\Dompdf->render()
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+CRITICAL - 2025-04-30 02:03:58 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+【Previous Exception】
+Exception
+The PHP GD extension is required, but is not installed.
+#0 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo...', 477.76031496063, 724.37031496063, 75.0, 75.0)
+#1 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo...', 477.76031496063, 42.51968503937, 75.0, 75.0, 'normal')
+#2 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+#3 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+#4 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+#5 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#6 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#7 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(NULL)
+#8 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#9 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\app\Controllers\AdminController.php(125): Dompdf\Dompdf->render()
+#10 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+#11 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#12 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#14 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\rewrite.php(44): require_once('C:\\PT Bukit Asa...')
+#17 {main}
+[Method: GET, Route: admin/generate-pdf/1]
+in APPPATH\Views\errors\html\error_exception.php on line 131.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-04-30 02:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:05:00 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:05:02 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:05:03 --> AuthFilter triggered. Session ID: 
+CRITICAL - 2025-04-30 02:05:04 --> Exception: The PHP GD extension is required, but is not installed.
+[Method: GET, Route: admin/generate-pdf/1]
+in VENDORPATH\dompdf\dompdf\lib\Cpdf.php on line 6091.
+ 1 VENDORPATH\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_BF79.tmp', 477.7603149606299, 724.3703149606299, 75.0, 75.0)
+ 2 VENDORPATH\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo\\AppData\\Local\\Temp\\ca_BF79.tmp', 477.7603149606299, 42.51968503937008, 75.0, 75.0, 'normal')
+ 3 VENDORPATH\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+ 4 VENDORPATH\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+ 5 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+ 6 VENDORPATH\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 7 VENDORPATH\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 8 VENDORPATH\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(null)
+ 9 VENDORPATH\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+10 APPPATH\Controllers\AdminController.php(125): Dompdf\Dompdf->render()
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+CRITICAL - 2025-04-30 02:05:08 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+【Previous Exception】
+Exception
+The PHP GD extension is required, but is not installed.
+#0 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Adapter\CPDF.php(672): Dompdf\Cpdf->addPngFromFile('C:\\Users\\lenovo...', 477.76031496063, 724.37031496063, 75.0, 75.0)
+#1 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer\Image.php(63): Dompdf\Adapter\CPDF->image('C:\\Users\\lenovo...', 477.76031496063, 42.51968503937, 75.0, 75.0, 'normal')
+#2 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(305): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+#3 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(140): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+#4 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+#5 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Renderer.php(207): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#6 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#7 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): Dompdf\FrameReflower\Page->reflow(NULL)
+#8 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\vendor\dompdf\dompdf\src\Dompdf.php(808): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#9 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\app\Controllers\AdminController.php(125): Dompdf\Dompdf->render()
+#10 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+#11 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#12 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#14 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\system\rewrite.php(44): require_once('C:\\PT Bukit Asa...')
+#17 {main}
+[Method: GET, Route: admin/generate-pdf/1]
+in APPPATH\Views\errors\html\error_exception.php on line 131.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-04-30 02:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:06:50 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:08:27 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:08:29 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:08:31 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:08:56 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:10:07 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:17:04 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:20:59 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:27:41 --> AuthFilter triggered. Session ID: 
+CRITICAL - 2025-04-30 02:27:41 --> ErrorException: file_get_contents(C:\PT Bukit Asam Tbk Unit Dermaga Kertapati\Sistem Informasi Permintaan Surat Perobatan\public\assets/img/Logo PTBA 2 750x140px.png): Failed to open stream: No such file or directory
+[Method: GET, Route: admin/generate-pdf/1]
+in APPPATH\Controllers\AdminController.php on line 108.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\assets/img/Logo PTBA 2 750x140px.png): Failed to open stream: No such file or directory', 'C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\app\\Controllers\\AdminController.php', 108)
+ 2 APPPATH\Controllers\AdminController.php(108): file_get_contents('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\assets/img/Logo PTBA 2 750x140px.png')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->generatePdf('1')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-04-30 02:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:27:57 --> AuthFilter triggered. Session ID: 
