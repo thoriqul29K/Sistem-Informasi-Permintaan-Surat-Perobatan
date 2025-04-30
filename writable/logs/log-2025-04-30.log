@@ -547,3 +547,38 @@ in APPPATH\Controllers\AdminController.php on line 108.
  9 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
 DEBUG - 2025-04-30 02:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-04-30 02:27:57 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:35:23 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:35:24 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:35:26 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:37:07 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:37:31 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:39:11 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:39:40 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:39:54 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:40:15 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:40:43 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:40:56 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:41:04 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:41:14 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:41:44 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:42:00 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:42:11 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-04-30 02:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 02:42:20 --> AuthFilter triggered. Session ID: 

@@ -44,9 +44,24 @@ function convertMonthToRoman($month)
         }
 
         .header {
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
             margin-bottom: 10mm;
         }
+
+        .header-logo {
+            margin: 0;
+        }
+
+        .header-date {
+            position: relative;
+            left: -27px;
+            /* geser 10px ke kiri */
+            margin: 2mm 0 6mm;
+            font-size: 10pt;
+        }
+
 
         .header h1 {
             margin: 0;
@@ -127,9 +142,12 @@ function convertMonthToRoman($month)
 
 <body>
     <div class="header" style="text-align: right;">
-        <img src="<?= esc($logoDataUri) ?>" alt="Logo Bukit Asam" style="width:200px;">
-        <p>Palembang, <?= date('d-m-Y') ?></p>
+        <img src="<?= esc($logoDataUri) ?>" alt="Logo Bukit Asam" class="header-logo" width="180px">
+        <p class="header-date">
+            Palembang, <?= date('j') . ' ' . ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'][date('n') - 1] . ' ' . date('Y') ?>
+        </p>
     </div>
+
 
     <div class="content">
         <div class="field">
