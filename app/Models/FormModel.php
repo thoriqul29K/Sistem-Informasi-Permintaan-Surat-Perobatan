@@ -6,16 +6,18 @@ use CodeIgniter\Model;
 
 class FormModel extends Model
 {
-    protected $table = 'form_data';
+    protected $table      = 'form_data';
     protected $primaryKey = 'id';
     protected $allowedFields = [
         'nama_lengkap',
-        'nama_keluarga',
-        'np',
         'umur',
         'jenis_kelamin',
+        'nama_keluarga',
+        'np',
         'jenjang_jabatan',
-        'rumah_sakit_dituju',
-        'status'
+        'rs_id',
+        'status',
+        'created_at',
+        'approved_at'
     ];
 }

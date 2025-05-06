@@ -57,10 +57,11 @@
         <label for="rumah_sakit_dituju" class="formbold-form-label">Rumah Sakit yang Dituju</label>
         <select name="rumah_sakit_dituju" id="rumah_sakit_dituju" class="formbold-form-input" required>
           <option value="">-- Pilih Rumah Sakit --</option>
-          <option value="Siloam">Rumah Sakit Siloam</option>
-          <option value="A">RS A</option>
-          <option value="B">RS B</option>
-          <option value="C">RS C</option>
+          <?php foreach ($rs_list as $rs): ?>
+            <option value="<?= esc($rs['ID']) ?>">
+              <?= esc($rs['Nama_RS']) ?> — <?= esc($rs['Jalan']) ?>
+            </option>
+          <?php endforeach; ?>
         </select>
       </div>
 

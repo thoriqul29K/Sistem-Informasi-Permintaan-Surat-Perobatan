@@ -38,7 +38,12 @@
                         <td><?= $info['np'] ?></td>
                         <td><?= $info['umur'] ?> tahun</td>
                         <td><?= $info['jenjang_jabatan'] ?></td>
-                        <td>Rumah Sakit <?= $info['rumah_sakit_dituju'] ?></td>
+                        <td>
+                            <?= esc($info['nama_rs']) ?>
+                            <?php if (! empty($info['jalan_rs'])): ?>
+                                <br><small class="text-muted"><?= esc($info['jalan_rs']) ?></small>
+                            <?php endif; ?>
+                        </td>
                         <td><?= $info['status'] ?></td>
                         <td>
                             <a href="<?= base_url('/admin/detail/' . $info['id']) ?>" class="btn btn-primary btn-sm">

@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\FormModel;
+use App\Models\RSModel;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 use PHPMailer\PHPMailer\PHPMailer;
@@ -11,30 +12,40 @@ use PHPMailer\PHPMailer\Exception;
 class AdminController extends BaseController
 {
     protected $formModel;
+    protected $rsModel;
 
     public function __construct()
     {
         $this->formModel = new FormModel(); // Inisialisasi model di constructor
+        $this->rsModel = new RSModel(); // Inisialisasi model di constructor
     }
     public function index()
     {
-        $data['list_info'] = $this->formModel->findAll();
+        $data['list_info'] = $this->formModel
+            ->select('form_data.*, rs_list.nama_rs, rs_list.jalan AS jalan_rs')
+            ->join('rs_list', 'form_data.rs_id = rs_list.ID', 'left')
+            ->orderBy('form_data.created_at', 'DESC')
+            ->findAll();
+
         return view('pages/admin/list_info', $data);
     }
 
     public function detail($id)
     {
-        // Ambil data detail berdasarkan ID
-        $data['info'] = $this->formModel->find($id);
+        // Ambil data form + join rs_list
+        $info = $this->formModel
+            ->select('form_data.*, rs_list.nama_rs, rs_list.jalan AS jalan_rs')
+            ->join('rs_list', 'form_data.rs_id = rs_list.ID', 'left')
+            ->where('form_data.id', $id)
+            ->first();
 
-        // Jika data tidak ditemukan, redirect dengan pesan error
-        if (!$data['info']) {
+        if (! $info) {
             return redirect()->to('/list-info')->with('error', 'Data tidak ditemukan.');
         }
 
-        // Tampilkan view detail_info dengan data
-        return view('pages/admin/detail_info', $data);
+        return view('pages/admin/detail_info', ['info' => $info]);
     }
+
 
 
     public function verify($id)
@@ -61,6 +72,11 @@ class AdminController extends BaseController
         if (!$info) {
             return false;
         }
+
+        // Ambil detail RS
+        $rs = $this->rsModel->find($info['rs_id']);
+        $info['nama_rs']   = $rs['nama_rs'];
+        $info['jalan_rs']  = $rs['jalan'];
 
         // 1) Siapkan Base64 untuk logo
         $path      = FCPATH . 'assets/img/logo_ptba2.png';

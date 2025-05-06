@@ -3,13 +3,19 @@
 namespace App\Controllers;
 
 use App\Models\FormModel;
+use App\Models\RSModel;
 use CodeIgniter\Controller;
 
 class FormController extends BaseController
 {
     public function SIPSP(): string
     {
-        return view('pages/form_permintaansurat');
+        // Ambil semua record RS dari database
+        $rsModel = new RSModel();
+        $data['rs_list'] = $rsModel->findAll();
+
+        // Kirim ke view
+        return view('pages/form_permintaansurat', $data);
     }
 
     public function simpan()
@@ -23,7 +29,7 @@ class FormController extends BaseController
             'nama_keluarga'      => $this->request->getPost('nama_keluarga'),
             'np'                 => $this->request->getPost('np'),
             'jenjang_jabatan'    => $this->request->getPost('jenjang_jabatan'),
-            'rumah_sakit_dituju' => $this->request->getPost('rumah_sakit_dituju'),
+            'rs_id'             => $this->request->getPost('rumah_sakit_dituju'),
             'status'             => 'Menunggu'
         ];
         $formModel->insert($data);
