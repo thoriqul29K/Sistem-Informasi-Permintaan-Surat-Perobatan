@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2025 at 02:47 AM
+-- Generation Time: May 06, 2025 at 08:55 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -35,6 +35,7 @@ CREATE TABLE `form_data` (
   `umur` int(10) NOT NULL,
   `jenis_kelamin` enum('Laki-laki','Perempuan') NOT NULL,
   `jenjang_jabatan` varchar(70) NOT NULL,
+  `rs_id` int(11) NOT NULL,
   `rumah_sakit_dituju` varchar(50) NOT NULL,
   `status` enum('Menunggu','Disetujui') DEFAULT 'Menunggu',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -45,14 +46,33 @@ CREATE TABLE `form_data` (
 -- Dumping data for table `form_data`
 --
 
-INSERT INTO `form_data` (`id`, `nama_lengkap`, `nama_keluarga`, `np`, `umur`, `jenis_kelamin`, `jenjang_jabatan`, `rumah_sakit_dituju`, `status`, `created_at`, `approved_at`) VALUES
-(7, 'M. Rizki', 'Rizki Abdurrahman', 1937462818, 21, 'Laki-laki', 'Mahasiswa Magang/Humas', 'B', 'Disetujui', '2025-04-15 00:05:54', NULL),
-(8, 'Muhammad Thoriqul Kirom', 'Muhammad Hanif', 3948574921, 19, 'Laki-laki', 'Mahasiswa Magang/Humas', 'Siloam', 'Disetujui', '2025-04-15 00:08:54', NULL),
-(9, 'Muhammad Hafiz', 'Bintang Ramadhan', 2838023020, 21, 'Laki-laki', 'Mahasiswa Magang/Humas', 'B', 'Menunggu', '2025-04-15 00:13:18', NULL),
-(10, 'Bintang Ramadhan', 'Chesya Waliana', 1837491901, 20, 'Laki-laki', 'Mahasiswa Magang/Humas', 'C', 'Menunggu', '2025-04-15 00:14:02', NULL),
-(11, 'Fahmi Zaki Muhammad', 'Riwandi Apridiansyah', 4294967295, 22, 'Laki-laki', 'Mahasiswa Magang/SDM', 'Siloam', 'Menunggu', '2025-04-15 00:15:11', NULL),
-(12, 'Riwandi Apridiansyah', 'Cindy Laurensia P Tampubolon', 2736491820, 20, 'Laki-laki', 'Mahasiswa Magang/Keuangan', 'C', 'Menunggu', '2025-04-15 00:17:49', NULL),
-(13, 'Kaiser Wilhelm II', 'Kaiser Franz Ferdinand', 1234567890, 150, 'Laki-laki', 'Kaisar', 'Siloam', 'Menunggu', '2025-04-15 00:38:18', NULL);
+INSERT INTO `form_data` (`id`, `nama_lengkap`, `nama_keluarga`, `np`, `umur`, `jenis_kelamin`, `jenjang_jabatan`, `rs_id`, `rumah_sakit_dituju`, `status`, `created_at`, `approved_at`) VALUES
+(15, 'Yatim', 'Piatu', 123456789, 70, 'Perempuan', 'aeaefaegafa', 5, '', 'Disetujui', '2025-05-05 01:26:14', '2025-05-05 01:32:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `rs_list`
+--
+
+CREATE TABLE `rs_list` (
+  `ID` int(2) NOT NULL,
+  `Nama_RS` varchar(120) NOT NULL,
+  `Jalan` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `rs_list`
+--
+
+INSERT INTO `rs_list` (`ID`, `Nama_RS`, `Jalan`) VALUES
+(1, 'Charitas', 'Jl. Jend. Sudirman'),
+(2, 'Siti Khadijah', 'Jl. Demang Lebar Daun'),
+(3, 'Umum Mohammad Hoesin', 'Jl. Jend. Sudirman'),
+(4, 'Siloam', 'Jl. POM IX'),
+(5, 'Bunda', 'Jl. Demang Lebar Daun'),
+(6, 'Umum Hermina Palembang', 'Jl. Jend. Basuki Rachmat'),
+(7, 'Umum Hermina OPI Jakabaring', 'Jl. Gubernur H. A Bastari');
 
 -- --------------------------------------------------------
 
@@ -96,7 +116,14 @@ DELIMITER ;
 -- Indexes for table `form_data`
 --
 ALTER TABLE `form_data`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_rs` (`rs_id`);
+
+--
+-- Indexes for table `rs_list`
+--
+ALTER TABLE `rs_list`
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indexes for table `users`
@@ -113,13 +140,29 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `form_data`
 --
 ALTER TABLE `form_data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT for table `rs_list`
+--
+ALTER TABLE `rs_list`
+  MODIFY `ID` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `form_data`
+--
+ALTER TABLE `form_data`
+  ADD CONSTRAINT `fk_rs` FOREIGN KEY (`rs_id`) REFERENCES `rs_list` (`ID`) ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
