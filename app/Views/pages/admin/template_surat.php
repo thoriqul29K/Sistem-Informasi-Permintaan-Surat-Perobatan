@@ -167,8 +167,15 @@ function convertMonthToRoman($month)
         </div>
         <hr>
         <p>Yang Terhormat,</p>
-        <p>Direktur Rumah Sakit <strong><?= esc($info['nama_rs']) ?></strong></p>
-        <p><?= esc($info['jalan_rs']) ?></p>
+        <p>Direktur Rumah Sakit
+            <strong>
+                <?= esc($info['nama_rs']   ?? '-') ?>
+            </strong>
+        </p>
+        <?php if (! empty($info['jalan_rs'])): ?>
+            <p><?= esc($info['jalan_rs']) ?></p>
+        <?php endif; ?>
+
         <p>di-</p>
         <p>Palembang</p>
         <br>

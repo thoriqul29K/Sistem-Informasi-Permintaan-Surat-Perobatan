@@ -35,6 +35,8 @@ class FormController extends BaseController
         $formModel->insert($data);
 
 
-        return redirect()->to('/form-permintaan-surat');
+        return $this->response
+            ->setStatusCode(201)
+            ->setJSON(['message' => 'Data berhasil terkirim']);
     }
 }

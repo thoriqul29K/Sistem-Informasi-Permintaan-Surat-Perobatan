@@ -27,11 +27,12 @@
                 <p><strong>Jenis Kelamin:</strong> <?= esc($info['jenis_kelamin']) ?></p>
                 <p><strong>Jenjang Jabatan:</strong> <?= esc($info['jenjang_jabatan']) ?></p>
                 <p><strong>Rumah Sakit Dituju:</strong>
-                    <?= esc($info['nama_rs'] ?? '-') ?>
+                    <?= esc($info['nama_rs']) ?>
                     <?php if (! empty($info['jalan_rs'])): ?>
                         <br><small class="text-muted"><?= esc($info['jalan_rs']) ?></small>
                     <?php endif; ?>
                 </p>
+
 
                 <p><strong>Status:</strong> <?= esc($info['status']) ?></p>
                 <?php if (!empty($info['approved_at'])): ?>

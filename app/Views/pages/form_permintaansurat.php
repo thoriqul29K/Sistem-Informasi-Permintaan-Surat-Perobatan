@@ -4,7 +4,7 @@
     <div class="logo-container">
       <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/logo BUMN.png') ?>" />
       <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/Akhlak.png') ?>" />
-      <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/logo PTBA 2.png') ?>" />
+      <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/Logo PTBA 750x140px.png') ?>" />
     </div>
     <form id="formPermintaan" action="<?= base_url('form/simpan') ?>" method="POST">
       <div class="formbold-form-title">
@@ -203,22 +203,21 @@
   }
 </style>
 <script>
-  document.getElementById('formPermintaan').addEventListener('submit', function(e) {
+  document.getElementById('formPermintaan').addEventListener('submit', async function(e) {
     e.preventDefault();
-    var form = e.target;
-    var formData = new FormData(form);
-    fetch(form.action, {
-        method: form.method,
-        body: formData,
-      })
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('message').style.display = 'block';
-        form.reset();
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
+    const form = e.target;
+    const res = await fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      redirect: 'follow' // ikut redirect otomatis
+    });
+    if (res.redirected) {
+      window.location.href = res.url; // pindah ke URL baru
+    } else {
+      // fallback jika tidak redirect
+      document.getElementById('message').style.display = 'block';
+      form.reset();
+    }
   });
   // Menonaktifkan fungsi scroll (wheel) pada input np
   document.getElementById('np').addEventListener('wheel', function(e) {

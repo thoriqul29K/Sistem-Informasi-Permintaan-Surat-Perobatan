@@ -9,8 +9,8 @@ class RSModel extends Model
     protected $table = 'rs_list';
     protected $primaryKey = 'ID';
     protected $allowedFields = [
-        'id',
-        'nama_rs',
-        'jalan'
+        'ID',
+        'Nama_RS',
+        'Jalan'
     ];
 }
