@@ -243,6 +243,71 @@
   #np {
     -moz-appearance: textfield;
   }
+
+  @media (max-width: 576px) {
+    .logo-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .formbold-img {
+      width: 80px;
+      height: auto;
+    }
+  }
+
+
+  /* Mobile First Adjustments */
+  @media (max-width: 768px) {
+    .formbold-main-wrapper {
+      padding: 32px 16px;
+    }
+
+    .formbold-form-wrapper {
+      padding: 24px;
+    }
+
+    .formbold-form-title h2 {
+      font-size: 24px;
+    }
+
+    .formbold-form-input {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+
+    .formbold-btn {
+      width: 100%;
+      padding: 14px;
+    }
+  }
+
+  /* Very small screens */
+  @media (max-width: 576px) {
+    .logo-container {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .formbold-img {
+      width: 60px;
+      height: auto;
+    }
+
+    .formbold-form-title h2 {
+      font-size: 20px;
+    }
+
+    .formbold-form-title p {
+      font-size: 14px;
+    }
+
+    .formbold-form-input,
+    .formbold-btn {
+      font-size: 16px;
+      padding: 14px 12px;
+    }
+  }
 </style>
 <script>
   // Menonaktifkan fungsi scroll (wheel) pada input np
