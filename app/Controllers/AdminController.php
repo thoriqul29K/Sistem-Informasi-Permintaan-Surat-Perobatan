@@ -14,23 +14,56 @@ class AdminController extends BaseController
 {
     protected $formModel;
     protected $rsModel;
+    protected $logoDataUri;
+
+
 
     public function __construct()
     {
         $this->formModel = new FormModel();
         $this->rsModel   = new RSModel();
+
+        $this->dompdfOptions = (new Options())
+            ->set('isRemoteEnabled', true)
+            ->set('chroot', FCPATH)
+            ->set('enable_font_subsetting', true);
+    }
+
+
+    private function buildLogoDataUri(): string
+    {
+        $path = FCPATH . 'assets/img/Logo PTBA 750x140px.png';
+        if (! file_exists($path)) {
+            throw new \RuntimeException("Logo tidak ditemukan");
+        }
+        $data = file_get_contents($path);
+        $mime = (new \finfo(FILEINFO_MIME_TYPE))->buffer($data);
+        return 'data:' . $mime . ';base64,' . base64_encode($data);
     }
 
     public function index()
     {
+        // 1) Ambil data form_data + join sekali ke rs_list
         $data['list_info'] = $this->formModel
-            ->select('form_data.*, rs_list.Nama_RS AS nama_rs, rs_list.Jalan AS jalan_rs')
+            ->select(
+                'form_data.id, '
+                    . 'form_data.nama_lengkap, '
+                    . 'form_data.nama_keluarga, '
+                    . 'form_data.np, '
+                    . 'form_data.umur, '
+                    . 'form_data.jenjang_jabatan, '
+                    . 'rs_list.Nama_RS AS nama_rs, '
+                    . 'rs_list.Jalan AS jalan_rs, '
+                    . 'form_data.status'
+            )
             ->join('rs_list', 'form_data.rs_id = rs_list.ID', 'left')
             ->orderBy('form_data.created_at', 'DESC')
             ->findAll();
 
         return view('pages/admin/list_info', $data);
     }
+
+
 
     public function detail($id)
     {
@@ -127,18 +160,10 @@ class AdminController extends BaseController
 
     private function renderDompdf(string $html): Dompdf
     {
-        $options = new Options();
-        $options->set('isRemoteEnabled', true);
-        $options->set('chroot', FCPATH);
-        $options->set('enable_font_subsetting', true);
-
-        $dompdf = new Dompdf($options);
+        $dompdf = new Dompdf($this->dompdfOptions);
         $dompdf->loadHtml($html);
         $dompdf->setPaper('A4', 'portrait');
         $dompdf->render();
-
         return $dompdf;
     }
-
-    // ... rest of your methods (sendEmail, hapus, hapusOtomatis) remain unchanged ...
 }

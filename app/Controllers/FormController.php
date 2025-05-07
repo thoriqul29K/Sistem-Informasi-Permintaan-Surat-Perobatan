@@ -8,6 +8,15 @@ use CodeIgniter\Controller;
 
 class FormController extends BaseController
 {
+
+    /** @var FormModel */
+    protected $formModel;
+
+    public function __construct()
+    {
+        $this->formModel = new FormModel();
+    }
+
     public function SIPSP(): string
     {
         // Ambil semua record RS dari database
@@ -20,23 +29,28 @@ class FormController extends BaseController
 
     public function simpan()
     {
-        $formModel = new FormModel();
-
-        $data = [
-            'nama_lengkap'       => $this->request->getPost('nama_lengkap'),
-            'umur'               => $this->request->getPost('umur'),
-            'jenis_kelamin'      => $this->request->getPost('jenis_kelamin'),
-            'nama_keluarga'      => $this->request->getPost('nama_keluarga'),
-            'np'                 => $this->request->getPost('np'),
-            'jenjang_jabatan'    => $this->request->getPost('jenjang_jabatan'),
-            'rs_id'             => $this->request->getPost('rumah_sakit_dituju'),
-            'status'             => 'Menunggu'
+        $rules = [
+            'nama_lengkap'    => 'required|max_length[70]',
+            'nama_keluarga'   => 'required|max_length[70]',
+            'np'              => 'required|integer',
+            'umur'            => 'required|integer',
+            'jenis_kelamin'   => 'required|in_list[Laki-laki,Perempuan]',
+            'jenjang_jabatan' => 'required|max_length[70]',
+            'rumah_sakit_dituju' => 'required|integer'
         ];
-        $formModel->insert($data);
 
+        if (! $this->validate($rules)) {
+            // Simpan pesan kesalahan ke flashdata
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
 
-        return $this->response
-            ->setStatusCode(201)
-            ->setJSON(['message' => 'Data berhasil terkirim']);
+        $data = array_map('trim', $this->request->getPost());
+        $data['rs_id'] = $data['rumah_sakit_dituju'];
+        unset($data['rumah_sakit_dituju']);
+
+        $this->formModel->insert($data);
+
+        // Simpan pesan sukses ke flashdata
+        return redirect()->back()->with('success', 'Informasi berhasil dikirim.');
     }
 }

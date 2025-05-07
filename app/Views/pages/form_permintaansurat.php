@@ -6,6 +6,30 @@
       <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/Akhlak.png') ?>" />
       <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/Logo PTBA 750x140px.png') ?>" />
     </div>
+
+    <?php if (session()->getFlashdata('success')): ?>
+      <div class="alert alert-success">
+        <?= session()->getFlashdata('success') ?>
+      </div>
+    <?php endif; ?>
+
+    <?php if (session()->getFlashdata('errors')): ?>
+      <div class="alert alert-danger">
+        <ul>
+          <?php foreach (session()->getFlashdata('errors') as $error): ?>
+            <li><?= esc($error) ?></li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+    <?php endif; ?>
+
+    <?php if (isset($validation)): ?>
+      <div class="alert alert-danger">
+        <?= $validation->listErrors() ?>
+      </div>
+    <?php endif; ?>
+
+
     <form id="formPermintaan" action="<?= base_url('form/simpan') ?>" method="POST">
       <div class="formbold-form-title">
         <h2>Sistem Informasi Permintaan Surat Perobatan</h2>
@@ -76,6 +100,24 @@
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  .alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+
+  .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+
 
   * {
     margin: 0;
@@ -203,22 +245,6 @@
   }
 </style>
 <script>
-  document.getElementById('formPermintaan').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const form = e.target;
-    const res = await fetch(form.action, {
-      method: form.method,
-      body: new FormData(form),
-      redirect: 'follow' // ikut redirect otomatis
-    });
-    if (res.redirected) {
-      window.location.href = res.url; // pindah ke URL baru
-    } else {
-      // fallback jika tidak redirect
-      document.getElementById('message').style.display = 'block';
-      form.reset();
-    }
-  });
   // Menonaktifkan fungsi scroll (wheel) pada input np
   document.getElementById('np').addEventListener('wheel', function(e) {
     e.preventDefault();
