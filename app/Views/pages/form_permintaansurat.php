@@ -244,68 +244,86 @@
     -moz-appearance: textfield;
   }
 
-  @media (max-width: 576px) {
-    .logo-container {
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .formbold-img {
-      width: 80px;
-      height: auto;
-    }
-  }
-
-
-  /* Mobile First Adjustments */
+  /* ===== Responsif untuk layar kecil (mobile) ===== */
   @media (max-width: 768px) {
+
+    /* Buat wrapper memenuhi lebar, kurangi padding */
     .formbold-main-wrapper {
-      padding: 32px 16px;
+      padding: 24px;
+      /* Kurangi padding keseluruhan */
     }
 
     .formbold-form-wrapper {
-      padding: 24px;
+      padding: 20px;
+      /* Kurangi padding internal */
+      max-width: 100%;
+      /* Penuhi lebar layar */
+      margin: 0 10px;
+      /* Sisakan sedikit margin samping */
     }
 
-    .formbold-form-title h2 {
-      font-size: 24px;
-    }
-
-    .formbold-form-input {
-      padding: 12px 16px;
-      font-size: 14px;
-    }
-
-    .formbold-btn {
-      width: 100%;
-      padding: 14px;
-    }
-  }
-
-  /* Very small screens */
-  @media (max-width: 576px) {
+    /* Logo-container berubah jadi kolom */
     .logo-container {
       flex-direction: column;
-      gap: 8px;
+      /* Susun logo vertikal */
+      gap: 10px;
+      /* Jarak antar logo diperkecil */
+      margin-bottom: 15px;
+      /* Kurangi margin bawah */
     }
 
-    .formbold-img {
-      width: 60px;
-      height: auto;
+    /* Ukuran gambar logo diperkecil */
+    .logo-container .formbold-img {
+      width: 60px !important;
+      height: 60px !important;
     }
 
+    /* Judul dibuat lebih ringkas dan teks rata-tengah */
     .formbold-form-title h2 {
-      font-size: 20px;
+      font-size: 22px;
+      /* Perkecil ukuran font judul */
+      line-height: 28px;
     }
 
     .formbold-form-title p {
       font-size: 14px;
     }
 
-    .formbold-form-input,
+    /* Padding pada input dikurangi */
+    .formbold-form-input {
+      padding: 10px 16px;
+      font-size: 14px;
+      /* Font input dikurangi sedikit */
+    }
+
+    /* Tombol dibuat lebih besar agar mudah ditekan */
     .formbold-btn {
-      font-size: 16px;
-      padding: 14px 12px;
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+
+    /* Alert disesuaikan lebarnya */
+    .alert {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+
+  .logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .logo-container img {
+    max-width: 25%;
+    height: auto;
+  }
+
+  @media (max-width: 576px) {
+    .logo-container img {
+      max-width: 45%;
     }
   }
 </style>
