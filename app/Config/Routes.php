@@ -5,7 +5,10 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'LoginController::index');
+$routes->get('/', 'Pages::index');
+$routes->get('/tentang', 'Pages::tentang');
+$routes->get('/sop', 'Pages::sop');
+$routes->get('/login', 'LoginController::index');
 $routes->post('login', 'LoginController::login');
 $routes->post('/form/simpan', 'FormController::simpan');
 $routes->group('', ['filter' => 'auth'], function ($routes) {

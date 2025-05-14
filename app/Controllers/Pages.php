@@ -9,4 +9,20 @@ class Pages extends BaseController
     {
         return view('pages/index');
     }
+
+
+    public function sop()
+    {
+        return view('pages/sop');
+    }
+
+    public function tentang()
+    {
+        return view('pages/tentang');
+    }
+
+    public function login()
+    {
+        return view('pages/login');
+    }
 }

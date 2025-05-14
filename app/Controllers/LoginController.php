@@ -10,7 +10,7 @@ class LoginController extends BaseController
 {
     public function index()
     {
-        return view('pages/index');
+        return view('pages/login');
     }
 
     public function login()
