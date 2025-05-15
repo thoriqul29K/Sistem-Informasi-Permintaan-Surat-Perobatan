@@ -46,13 +46,12 @@
                         </td>
                         <td><?= $info['status'] ?></td>
                         <td>
-                            <?php if ($info['status'] == 'Menunggu'): ?>
-                                <a href="<?= base_url('admin/verify/' . $info['id']) ?>" class="btn btn-sm btn-success">Verifikasi</a>
-                            <?php elseif ($info['status'] == 'Terverifikasi'): ?>
-                                <a href="<?= base_url('ruler') ?>" class="btn btn-sm btn-primary">Ke Ruler</a>
-                            <?php else: ?>
-                                <button class="btn btn-sm btn-secondary" disabled>—</button>
-                            <?php endif; ?>
+                            <form action="<?= base_url('ruler/decide/' . $info['id']) ?>" method="POST" class="d-inline">
+                                <button name="action" value="approve" class="btn btn-sm btn-success">Setujui</button>
+                            </form>
+                            <form action="<?= base_url('ruler/decide/' . $info['id']) ?>" method="POST" class="d-inline">
+                                <button name="action" value="reject" class="btn btn-sm btn-danger">Tolak</button>
+                            </form>
                         </td>
                     </tr>
                 <?php endforeach; ?>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Beranda</title>
+  <title>PTBA - Beranda</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,6 +23,26 @@
       padding: 20px 0;
       background-color: #f5f5f5;
       text-align: center;
+    }
+
+    .img-carousel {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    @media screen and (max-width: 768px) {
+      .carousel-caption h3 {
+        font-size: 18px;
+      }
+
+      .carousel-caption p {
+        font-size: 14px;
+      }
+
+      .img-carousel {
+        height: 200px;
+      }
     }
 
     /* ✅ Ukuran Gambar Carousel */
@@ -59,9 +79,9 @@
       <div class="collapse navbar-collapse" id="nav-menu">
         <ul class="nav navbar-nav">
           <li class="active"><a href="/">Beranda</a></li>
-          <li><a href="<?= base_url('/tentang') ?>">Tentang</a></li>
-          <li><a href="<?= base_url('/sop') ?>">SOP</a></li>
-          <li><a href="<?= base_url('/login') ?>">Login</a></>
+          <li><a href="/tentang">Tentang</a></li>
+          <li><a href="/sop">SOP</a></li>
+          <li><a href="/login">Login</a></>
         </ul>
       </div>
 
@@ -81,14 +101,31 @@
 
       <!-- Slides -->
       <div class="carousel-inner">
+        <!-- Slide 1 -->
         <div class="item active">
-          <img src="<?= base_url('assets/img/foto1.jpeg') ?>" alt="Foto 1" style="width:100%;">
+          <img src="<?= base_url('assets/img/foto1.jpeg') ?>" alt="Foto 1" class="img-carousel">
+          <div class="carousel-caption">
+            <h3>Selamat Datang di Sistem Surat Perobatan</h3>
+            <p>Mempermudah pegawai PTBA dalam pengajuan dan persetujuan surat perobatan.</p>
+          </div>
         </div>
+
+        <!-- Slide 2 -->
         <div class="item">
-          <img src="<?= base_url('assets/img/foto2.jpeg') ?>" alt="Foto 2" style="width:100%;">
+          <img src="<?= base_url('assets/img/foto2.jpeg') ?>" alt="Foto 2" class="img-carousel">
+          <div class="carousel-caption">
+            <h3>Alur Pengajuan Digital</h3>
+            <p>Surat diperiksa Admin TU dan disetujui pimpinan melalui sistem.</p>
+          </div>
         </div>
+
+        <!-- Slide 3 -->
         <div class="item">
-          <img src="<?= base_url('assets/img/foto3.jpg') ?>" alt="Foto 3" style="width:100%;">
+          <img src="<?= base_url('assets/img/foto3.jpg') ?>" alt="Foto 3" class="img-carousel">
+          <div class="carousel-caption">
+            <h3>Efisien & Terintegrasi</h3>
+            <p>Pengajuan lebih cepat, aman, dan terdokumentasi rapi.</p>
+          </div>
         </div>
       </div>
 
@@ -102,17 +139,19 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+  </div>
 
-    <!-- ✅ INFO PENGANTAR -->
-    <div class="row" style="margin-top: 40px;">
-      <div class="col-xs-12">
-        <h2>Selamat Datang di Sistem Surat Perobatan Pegawai PTBA</h2>
-        <p>
-          Sistem ini dibuat untuk mendigitalisasi proses pengajuan surat perobatan bagi pegawai di PT Bukit Asam.
-          Anda dapat melihat informasi SOP, mengajukan surat perobatan, dan melacak status pengajuan Anda secara online.
-        </p>
-      </div>
+
+  <!-- ✅ INFO PENGANTAR -->
+  <div class="row" style="margin-top: 40px;">
+    <div class="col-xs-12">
+      <h2>Selamat Datang di Sistem Surat Perobatan Pegawai PTBA</h2>
+      <p>
+        Sistem ini dibuat untuk mendigitalisasi proses pengajuan surat perobatan bagi pegawai di PT Bukit Asam.
+        Anda dapat melihat informasi SOP, mengajukan surat perobatan, dan melacak status pengajuan Anda secara online.
+      </p>
     </div>
+  </div>
   </div>
 
   <!-- ✅ FOOTER -->

@@ -57,6 +57,7 @@ class AdminController extends BaseController
                     . 'form_data.status'
             )
             ->join('rs_list', 'form_data.rs_id = rs_list.ID', 'left')
+            ->whereIn('form_data.status', ['Menunggu', 'Disetujui', 'Ditolak'])
             ->orderBy('form_data.created_at', 'DESC')
             ->findAll();
 
@@ -73,27 +74,20 @@ class AdminController extends BaseController
 
     public function verify($id)
     {
-        // 1) Update status
+        // Hanya admin (role=admin) yang dapat
+        if (session()->get('role') !== 'admin') {
+            return redirect()->back()->with('error', 'Akses ditolak.');
+        }
+
         $this->formModel->update($id, [
-            'status'      => 'Disetujui',
+            'status'      => 'Terverifikasi',
             'verified_by' => session()->get('user_id'),
             'approved_at' => date('Y-m-d H:i:s'),
         ]);
-
-        // 2) Fetch enriched data
-        $info = $this->fetchWithRs($id);
-
-        // 3) Build & render PDF, then stream to browser immediately
-        $html   = view('pages/admin/template_surat', [
-            'info'        => $info,
-            'logoDataUri' => $this->getLogoDataUri(),
-        ]);
-        $dompdf = $this->renderDompdf($html);
-
-        return $dompdf->stream("surat_{$id}.pdf", [
-            'Attachment' => true,
-        ]);
+        return redirect()->to('/admin/detail/' . $id)
+            ->with('message', 'Data sudah terverifikasi.');
     }
+
 
     public function generatePdf($id)
     {
