@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 07, 2025 at 02:47 AM
+-- Generation Time: May 15, 2025 at 08:26 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -37,7 +37,7 @@ CREATE TABLE `form_data` (
   `jenjang_jabatan` varchar(70) NOT NULL,
   `rs_id` int(11) NOT NULL,
   `rumah_sakit_dituju` varchar(50) NOT NULL,
-  `status` enum('Menunggu','Disetujui') DEFAULT 'Menunggu',
+  `status` enum('Menunggu','Terverifikasi','Disetujui','Ditolak') NOT NULL DEFAULT 'Menunggu',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `approved_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -47,7 +47,12 @@ CREATE TABLE `form_data` (
 --
 
 INSERT INTO `form_data` (`id`, `nama_lengkap`, `nama_keluarga`, `np`, `umur`, `jenis_kelamin`, `jenjang_jabatan`, `rs_id`, `rumah_sakit_dituju`, `status`, `created_at`, `approved_at`) VALUES
-(15, 'Yatim', 'Piatu', 123456789, 70, 'Perempuan', 'aeaefaegafa', 5, '', 'Disetujui', '2025-05-05 01:26:14', '2025-05-07 00:20:38');
+(21, 'Muhammad Thoriqul Kirom', 'Muhammad Hanif', 123456789, 19, 'Laki-laki', 'Mahasiswa Magang/Humas', 7, '', 'Disetujui', '2025-05-07 02:04:45', '2025-05-07 02:52:39'),
+(22, 'Wir deutsche bieder from und stark', 'lieb vaterland magst ruhig sein', 897564231, 321, 'Laki-laki', 'fdgd', 5, '', 'Menunggu', '2025-05-07 05:35:24', NULL),
+(23, 'opefiwef', 'sdfsrgdfa', 1236547890, 212, 'Laki-laki', 'frgstd', 1, '', 'Menunggu', '2025-05-07 06:39:00', NULL),
+(26, 'Fahmi Zaki Muhammad', 'Riwandi Apridiansyah', 987654321, 6543, 'Perempuan', 'jhgfdvdzxgfgh', 4, '', 'Disetujui', '2025-05-07 07:18:44', '2025-05-07 07:21:17'),
+(27, 'Rizki', 'Rizki Abdurrahman', 1234567890, 20, 'Laki-laki', 'Bos', 1, '', 'Terverifikasi', '2025-05-14 07:52:15', '2025-05-15 03:27:19'),
+(28, 'Tessatu saja', 'Terus baru tes 2', 1234567890, 123, 'Laki-laki', 'wefsfgdnf', 5, '', 'Disetujui', '2025-05-15 01:56:19', '2025-05-15 02:04:46');
 
 -- --------------------------------------------------------
 
@@ -85,7 +90,7 @@ CREATE TABLE `users` (
   `nama` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `role` enum('user','admin') DEFAULT 'user'
+  `role` enum('user','admin','ruler') NOT NULL DEFAULT 'user'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -96,7 +101,7 @@ INSERT INTO `users` (`id`, `nama`, `email`, `password`, `role`) VALUES
 (10, 'Muhammad Thoriqul Kirom', 'thoriqul29@gmail.com', 'c2b047327c0ef9e1aa5932b9221fcfa0ff9db13be1f2daf6b3bb5e01aa40df74', 'user'),
 (12, 'Admin 1', 'admin1@gmail.com', '6384ebf19658233b52aa822a94ab2536b6badc16458acd43f7f7053ed0106831', 'admin'),
 (13, 'User 2', 'user2@gmail.com', '6384ebf19658233b52aa822a94ab2536b6badc16458acd43f7f7053ed0106831', 'user'),
-(14, 'admin 3', 'admin3@gmail.com', '6384ebf19658233b52aa822a94ab2536b6badc16458acd43f7f7053ed0106831', 'admin');
+(14, 'ruler 3', 'ruler3@gmail.com', '6384ebf19658233b52aa822a94ab2536b6badc16458acd43f7f7053ed0106831', 'ruler');
 
 --
 -- Triggers `users`
@@ -140,7 +145,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `form_data`
 --
 ALTER TABLE `form_data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `rs_list`
