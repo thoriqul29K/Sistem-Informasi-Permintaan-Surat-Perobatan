@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Tambahkan CSS sesuai kebutuhan -->
     <link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>">
-    <title>Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
 </head>
 
 <body>
