@@ -84,7 +84,7 @@ class AdminController extends BaseController
             'verified_by' => session()->get('user_id'),
             'approved_at' => date('Y-m-d H:i:s'),
         ]);
-        return redirect()->to('/admin/detail/' . $id)
+        return redirect()->to('/list-info')
             ->with('message', 'Data sudah terverifikasi.');
     }
 
