@@ -19,15 +19,18 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
 
 $routes->group('', ['filter' => 'auth', 'admin'], function ($routes) {
     $routes->get('list-info', 'AdminController::index');
-    $routes->get('admin/detail/(:num)', 'AdminController::detail/$1');
     $routes->get('admin/verify/(:num)', 'AdminController::verify/$1');
     $routes->post('admin/verify/(:num)', 'AdminController::verify/$1');
-    $routes->get('admin/generate-pdf/(:num)', 'AdminController::generatePdf/$1');
     $routes->post('admin/hapus/(:num)', 'AdminController::hapus/$1');
     // Opsional: route untuk penghapusan otomatis (untuk testing CLI)
 });
 
 $routes->group('', ['filter' => 'auth', 'ruler'], function ($routes) {
-    $routes->get('ruler',                 'RulerController::index');
     $routes->post('ruler/decide/(:num)',   'RulerController::decide/$1');
+});
+
+$routes->group('', ['filter' => 'auth', 'role:admin,ruler'], function ($routes) {
+    $routes->get('list-info', 'AdminController::index');
+    $routes->get('admin/generate-pdf/(:num)', 'AdminController::generatePdf/$1');
+    $routes->get('admin/detail/(:num)', 'AdminController::detail/$1');
 });

@@ -22,28 +22,41 @@
     </div>
 </div>
 
-<!-- Jika status masih Menunggu, tampilkan form verifikasi -->
-<?php if ($info['status'] == 'Menunggu'): ?>
-    <form action="<?= base_url('/admin/verify/' . $info['id']) ?>" method="post" class="mt-4">
-        <!-- Misal admin hanya melakukan verifikasi tanpa input tambahan -->
-        <button type="submit" class="btn btn-success">
-            Verifikasi & Tanda Tangan
-        </button>
-    </form>
-<?php else: ?>
-    <div class="alert alert-info mt-4">
-        Permintaan surat sudah diverifikasi.
-    </div>
-<?php endif; ?>
+<div class="mt-4">
+    <?php $role = session()->get('role'); ?>
 
-<!-- Jika status sudah Disetujui, tampilkan tombol untuk cetak ulang PDF -->
-<?php if ($info['status'] == 'Disetujui'): ?>
-    <a href="<?= base_url('/admin/generate-pdf/' . $info['id']) ?>" class="btn btn-warning mt-3">
-        Cetak Ulang PDF
-    </a>
-<?php endif; ?>
+    <!-- 1) Tombol Verifikasi (hanya admin & status = Menunggu) -->
+    <?php if ($role === 'admin' && $info['status'] === 'Menunggu'): ?>
+        <form action="<?= base_url('admin/verify/' . $info['id']) ?>" method="post" class="d-inline">
+            <button type="submit" class="btn btn-success">Verifikasi</button>
+        </form>
+    <?php endif; ?>
 
-<!-- Tombol Hapus Informasi -->
-<form action="<?= base_url('/admin/hapus/' . $info['id']) ?>" method="post" onsubmit="return confirm('Apakah Anda yakin ingin menghapus informasi ini?');" class="mt-3">
-    <button type="submit" class="btn btn-danger">Hapus Informasi</button>
-</form>
+    <!-- 2) Tombol Setujui/Tolak (hanya ruler & status = Terverifikasi) -->
+    <?php if ($role === 'ruler' && $info['status'] === 'Terverifikasi'): ?>
+        <form action="<?= base_url('ruler/decide/' . $info['id']) ?>" method="post" class="d-inline">
+            <button name="action" value="approve" class="btn btn-success">Setujui</button>
+        </form>
+        <form action="<?= base_url('ruler/decide/' . $info['id']) ?>" method="post" class="d-inline">
+            <button name="action" value="reject" class="btn btn-danger">Tolak</button>
+        </form>
+    <?php endif; ?>
+
+    <!-- 3) Cetak Ulang PDF (admin & ruler, tapi hanya ketika status Disetujui) -->
+    <?php if (in_array($role, ['admin', 'ruler']) && $info['status'] === 'Disetujui'): ?>
+        <a href="<?= base_url('admin/generate-pdf/' . $info['id']) ?>" class="btn btn-warning">
+            Cetak Ulang PDF
+        </a>
+    <?php endif; ?>
+
+    <!-- 4) Hapus Informasi (admin & ruler, untuk semua status) -->
+    <?php if (in_array($role, ['admin', 'ruler'])): ?>
+        <form
+            action="<?= base_url('admin/hapus/' . $info['id']) ?>"
+            method="post"
+            onsubmit="return confirm('Apakah Anda yakin ingin menghapus informasi ini?');"
+            class="d-inline">
+            <button type="submit" class="btn btn-danger">Hapus Informasi</button>
+        </form>
+    <?php endif; ?>
+</div>

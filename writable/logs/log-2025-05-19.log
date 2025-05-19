@@ -956,3 +956,1061 @@ DEBUG - 2025-05-19 05:27:39 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-05-19 05:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-05-19 05:27:39 --> AuthFilter triggered. Session ID: 
 DEBUG - 2025-05-19 05:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:34:07 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-05-19 07:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:34:16 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 07:34:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 07:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:34:25 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 07:34:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 07:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:34:30 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 07:34:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 07:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:34:33 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 07:34:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 07:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:34:45 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 07:34:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 07:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:45:38 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 07:45:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 07:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:45:54 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 07:45:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 07:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:46:00 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 07:46:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 07:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:46:01 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 07:46:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 07:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:47:07 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 07:47:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 07:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:47:18 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 07:47:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 07:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:47:22 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 07:47:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 07:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 07:47:22 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 07:47:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:11:59 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:11:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:00 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:04 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:04 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:06 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:06 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:07 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:07 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:11 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:12 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:12 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:15 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:18 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:18 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:19 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:19 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:20 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:12:21 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:12:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:15:45 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:15:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:17:30 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:17:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:17:32 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:17:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:18:17 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:18:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:18:21 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:18:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:27:15 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:27:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:27:17 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:27:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:27:21 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:27:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:27:45 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:27:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:27:46 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:27:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:27:54 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:27:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:27:55 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:27:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:01 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:28:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:02 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:28:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:02 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:28:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:12 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:28:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:16 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:28:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:22 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:28:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:30 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:28:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:32 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-05-19 08:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:32 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:28:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:35 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:28:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:48 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:28:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:57 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:28:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:28:58 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:28:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:33:02 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:33:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:33:03 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:33:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:33:07 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-05-19 08:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:33:07 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:33:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:35:26 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:35:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:35:35 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:35:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:35:42 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:35:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:35:43 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:35:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:35:44 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:35:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:48:22 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:48:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:48:24 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:48:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:48:27 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:48:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:48:29 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-05-19 08:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:48:29 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:48:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:48:58 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:48:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:49:00 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:49:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:49:02 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-05-19 08:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:49:02 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:49:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:49:06 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:49:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:50:30 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:50:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:51:08 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:51:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:51:12 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:51:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:51:19 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:51:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:51:25 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:51:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:51:29 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:51:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:51:41 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:51:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:51:54 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:51:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:51:58 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:51:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:52:04 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:52:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:52:08 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:52:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:52:14 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:52:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:52:41 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:52:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:52:43 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-05-19 08:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:52:43 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:52:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:52:46 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:52:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:52:53 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:52:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:53:13 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:53:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:53:15 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:53:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:53:16 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-05-19 08:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:53:16 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:53:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:53:33 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:53:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:53:35 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:53:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:53:36 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-05-19 08:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:53:36 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:53:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:53:44 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:53:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:53:53 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:53:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:54:16 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:54:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:54:19 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:54:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:54:26 --> AuthFilter triggered. Session ID: 
+DEBUG - 2025-05-19 08:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:54:26 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:54:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:55:08 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:55:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:55:12 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:55:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:55:13 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:55:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')
+DEBUG - 2025-05-19 08:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-19 08:55:13 --> AuthFilter triggered. Session ID: 
+WARNING - 2025-05-19 08:55:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminController::$dompdfOptions is deprecated in APPPATH\Controllers\AdminController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\PT Bukit Asam Tbk Unit Dermaga Kertapati\\Sistem Informasi Permintaan Surat Perobatan\\public\\index.php')

@@ -37,10 +37,12 @@ class RulerController extends BaseController
         $action = $this->request->getPost('action');
         if ($action === 'approve') {
             $this->formModel->update($id, ['status' => 'Disetujui']);
-            return redirect()->back()->with('message', 'Data disetujui dan surat dicetak.');
+            return redirect()->to('/list-info')
+                ->with('message', 'Informasi disetujui, dan surat dicetak!.');
         } else {
             $this->formModel->update($id, ['status' => 'Ditolak']);
-            return redirect()->back()->with('message', 'Data ditolak.');
+            return redirect()->to('/list-info')
+                ->with('message', 'Informasi ditolak!');
         }
     }
 }

@@ -57,7 +57,6 @@ class AdminController extends BaseController
                     . 'form_data.status'
             )
             ->join('rs_list', 'form_data.rs_id = rs_list.ID', 'left')
-            ->whereIn('form_data.status', ['Menunggu', 'Disetujui', 'Ditolak'])
             ->orderBy('form_data.created_at', 'DESC')
             ->findAll();
 

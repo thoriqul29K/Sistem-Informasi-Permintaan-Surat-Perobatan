@@ -37,7 +37,7 @@ class LoginController extends BaseController
                 if ($user['role'] === 'admin') {
                     return redirect()->to('/list-info');
                 } elseif ($user['role'] === 'ruler') {
-                    return redirect()->to('/ruler');
+                    return redirect()->to('/list-info');
                 } else {
                     return redirect()->to('/form-permintaan-surat');
                 }
