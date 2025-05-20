@@ -43,8 +43,9 @@ class AdminController extends BaseController
 
     public function index()
     {
+        $role = session()->get('role');
         // 1) Ambil data form_data + join sekali ke rs_list
-        $data['list_info'] = $this->formModel
+        $builder = $this->formModel
             ->select(
                 'form_data.id, '
                     . 'form_data.nama_lengkap, '
@@ -57,8 +58,18 @@ class AdminController extends BaseController
                     . 'form_data.status'
             )
             ->join('rs_list', 'form_data.rs_id = rs_list.ID', 'left')
-            ->orderBy('form_data.created_at', 'DESC')
-            ->findAll();
+            ->orderBy('form_data.created_at', 'DESC');
+        if ($role === 'admin') {
+            // admin lihat Menunggu, Disetujui, Ditolak
+            $builder->whereIn('form_data.status', ['Menunggu', 'Disetujui', 'Ditolak']);
+        } else if ($role === 'ruler') {
+            // ruler hanya lihat Terverifikasi & Disetujui
+            $builder->whereIn('form_data.status', ['Terverifikasi', 'Disetujui']);
+        } else {
+            // misal user biasa, dialihkan
+            return redirect()->to('/')->with('error', 'Akses ditolak.');
+        }
+        $data['list_info'] = $builder->findAll();
 
         return view('pages/admin/list_info', $data);
     }
