@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2025 at 04:43 AM
+-- Generation Time: May 20, 2025 at 06:43 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -48,11 +48,10 @@ CREATE TABLE `form_data` (
 
 INSERT INTO `form_data` (`id`, `nama_lengkap`, `nama_keluarga`, `np`, `umur`, `jenis_kelamin`, `jenjang_jabatan`, `rs_id`, `rumah_sakit_dituju`, `status`, `created_at`, `approved_at`) VALUES
 (21, 'Muhammad Thoriqul Kirom', 'Muhammad Hanif', 123456789, 19, 'Laki-laki', 'Mahasiswa Magang/Humas', 7, '', 'Disetujui', '2025-05-07 02:04:45', '2025-05-07 02:52:39'),
-(22, 'Wir deutsche bieder from und stark', 'lieb vaterland magst ruhig sein', 897564231, 321, 'Laki-laki', 'fdgd', 5, '', 'Disetujui', '2025-05-07 05:35:24', '2025-05-19 02:16:56'),
-(23, 'opefiwef', 'sdfsrgdfa', 1236547890, 212, 'Laki-laki', 'frgstd', 1, '', 'Disetujui', '2025-05-07 06:39:00', '2025-05-19 02:16:45'),
-(26, 'Fahmi Zaki Muhammad', 'Riwandi Apridiansyah', 987654321, 6543, 'Perempuan', 'jhgfdvdzxgfgh', 4, '', 'Disetujui', '2025-05-07 07:18:44', '2025-05-07 07:21:17'),
-(28, 'Tessatu saja', 'Terus baru tes 2', 1234567890, 123, 'Laki-laki', 'wefsfgdnf', 5, '', 'Disetujui', '2025-05-15 01:56:19', '2025-05-15 02:04:46'),
-(29, 'Rusdi', 'Imut', 4294967295, 1000, 'Perempuan', 'barbershop amba ngawi', 5, '', 'Disetujui', '2025-05-19 02:40:28', '2025-05-19 02:40:47');
+(26, 'Fahmi Zaki Muhammad', 'Riwandi Apridiansyah', 987654321, 6543, 'Perempuan', 'jhgfdvdzxgfgh', 4, '', 'Ditolak', '2025-05-07 07:18:44', '2025-05-07 07:21:17'),
+(28, 'Tessatu saja', 'Terus baru tes 2', 1234567890, 123, 'Laki-laki', 'wefsfgdnf', 5, '', 'Terverifikasi', '2025-05-15 01:56:19', '2025-05-19 08:55:13'),
+(29, 'Rusdi', 'Imut', 4294967295, 1000, 'Perempuan', 'barbershop amba ngawi', 5, '', 'Disetujui', '2025-05-19 02:40:28', '2025-05-19 02:40:47'),
+(31, 'uegaoefhaw', 'sdgfhmfdytds', 1029384756, 105, 'Perempuan', 'AGgzfhmxukfhgsrdxvegEdg', 1, '', 'Menunggu', '2025-05-19 03:01:45', '2025-05-19 04:56:02');
 
 -- --------------------------------------------------------
 
@@ -145,7 +144,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `form_data`
 --
 ALTER TABLE `form_data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `rs_list`
