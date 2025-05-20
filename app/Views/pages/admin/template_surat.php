@@ -36,7 +36,7 @@ function convertMonthToRoman($month)
             font-family: Arial, sans-serif;
             margin: 0;
             /* menggunakan @page untuk margin */
-            font-size: 10pt;
+            font-size: 8.3pt;
             /* ukuran font lebih kecil */
             line-height: 1.3;
             /* jarak baris */
