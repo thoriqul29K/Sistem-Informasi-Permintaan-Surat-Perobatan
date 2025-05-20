@@ -25,42 +25,60 @@
       text-align: center;
     }
 
-    .img-carousel {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-    }
+    
 
-    @media screen and (max-width: 768px) {
-      .carousel-caption h3 {
-        font-size: 18px;
-      }
+    /* Tambahkan ini */
+.img-carousel {
+  width: 100%;
+  height: 600px; /* Ubah tinggi sesuai kebutuhan, misalnya 600px */
+  object-fit: cover; /* Menjaga proporsi gambar dan crop bagian luar */
+}
 
-      .carousel-caption p {
-        font-size: 14px;
-      }
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .img-carousel {
+    height: 300px; /* Ukuran tinggi untuk mobile */
+  }
 
-      .img-carousel {
-        height: 200px;
-      }
-    }
+  .carousel-caption h3 {
+    font-size: 18px;
+  }
 
-    /* ✅ Ukuran Gambar Carousel */
-    .carousel-inner>.item>img {
-      height: 400px;
-      /* Atur tinggi tetap */
-      object-fit: cover;
-      /* Pangkas gambar agar pas */
-      width: 100%;
-      /* Pastikan lebar penuh */
-    }
+  .carousel-caption p {
+    font-size: 14px;
+  }
+}
 
-    @media (max-width: 768px) {
-      .carousel-inner>.item>img {
-        height: 250px;
-        /* Lebih pendek di mobile */
-      }
-    }
+    .carousel-container {
+    max-width: 100%;
+    height: 400px; /* Atur tinggi tetap */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .mySlides {
+    height: 100%;
+    display: none;
+  }
+
+  .mySlides img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* menjaga gambar tetap proporsional & mengisi area */
+  }
+
+  .mySlides .text-slide {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #052c65;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
   </style>
 
   <!-- ✅ NAVBAR RESPONSIF -->
@@ -103,7 +121,7 @@
       <div class="carousel-inner">
         <!-- Slide 1 -->
         <div class="item active">
-          <img src="<?= base_url('assets/img/foto1.jpeg') ?>" alt="Foto 1" class="img-carousel">
+          <img src="<?= base_url('assets/img/carousel2_2.jpg') ?>" alt="Foto 1" class="img-carousel">
           <div class="carousel-caption">
             <h3>Selamat Datang di Sistem Surat Perobatan</h3>
             <p>Mempermudah pegawai PTBA dalam pengajuan dan persetujuan surat perobatan.</p>
@@ -112,7 +130,7 @@
 
         <!-- Slide 2 -->
         <div class="item">
-          <img src="<?= base_url('assets/img/foto2.jpeg') ?>" alt="Foto 2" class="img-carousel">
+          <img src="<?= base_url('assets/img/carousel 2_LE.jpg') ?>" alt="Foto 2" class="img-carousel">
           <div class="carousel-caption">
             <h3>Alur Pengajuan Digital</h3>
             <p>Surat diperiksa Admin TU dan disetujui pimpinan melalui sistem.</p>
@@ -121,7 +139,7 @@
 
         <!-- Slide 3 -->
         <div class="item">
-          <img src="<?= base_url('assets/img/foto3.jpg') ?>" alt="Foto 3" class="img-carousel">
+          <img src="<?= base_url('assets/img/carousel slide 3(1).jpg') ?>" alt="Foto 3" class="img-carousel">
           <div class="carousel-caption">
             <h3>Efisien & Terintegrasi</h3>
             <p>Pengajuan lebih cepat, aman, dan terdokumentasi rapi.</p>
@@ -141,7 +159,6 @@
     </div>
   </div>
 
-
   <!-- ✅ INFO PENGANTAR -->
   <div class="row" style="margin-top: 40px;">
     <div class="col-xs-12">
@@ -154,10 +171,55 @@
   </div>
   </div>
 
+  <!-- ✅ HTML SLIDES -->
+ <!-- Slide dengan latar belakang biru tua -->
+ <div class="w3-content" style="max-width: 400px; margin: auto;">
+
+  <!-- Slide 1: Teks -->
+  <div class="mySlides w3-container" style="background-color: #052c65; color: white; padding: 20px; border-radius: 10px;">
+    <h1><b>Did You Know?</b></h1>
+    <h1><i>We plan to sell trips to the moon in the 2020s</i></h1>
+  </div>
+
+  <!-- Slide 2: Gambar -->
+  <div class="mySlides">
+    <img src="<?= base_url('assets/img/IMG_4837.jpg') ?>" alt="Slide 2" style="width:100%; height:auto; border-radius: 10px;">
+  </div>
+
+  <!-- Slide 3: Teks -->
+  <div class="mySlides w3-container" style="background-color: #052c65; color: white; padding: 20px; border-radius: 10px;">
+    <p><span class="w3-tag w3-yellow">New!</span></p>
+    <p>6 Crystal Glasses</p>
+    <p>Only $99 !!!</p>
+  </div>
+
+  <!-- Slide 4: Gambar -->
+  <div class="mySlides">
+    <img src="<?= base_url('assets/img/IMG_4839.jpg') ?>" alt="Slide 4" style="width:100%; height:auto; border-radius: 10px;">
+  </div>
+
+</div>
+
   <!-- ✅ FOOTER -->
   <footer>
     <p>© 2025 PT Bukit Asam. Sistem Digital Surat Perobatan</p>
   </footer>
+  <script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 2000); 
+}
+</script>
 
   </body>
 
