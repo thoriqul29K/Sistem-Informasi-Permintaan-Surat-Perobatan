@@ -9,7 +9,30 @@ body {
     text-align: center;
   }
 
-
+/* Sesuaikan warna background navbar */
+.navbar-inverse {
+    background-color: #002147;  /* Contoh: biru tua PTBA */
+    border-color: #00112a;
+  }
+  
+  /* Warna link normal */
+  .navbar-inverse .navbar-nav > li > a {
+    color: #FFD700;  /* Emas */
+  }
+  
+  /* Warna link hover/fokus */
+  .navbar-inverse .navbar-nav > li > a:hover,
+  .navbar-inverse .navbar-nav > li > a:focus {
+    color: #FF4500;  /* Oranye kemerahan */
+  }
+  
+  /* Warna link aktif */
+  .navbar-inverse .navbar-nav > .active > a,
+  .navbar-inverse .navbar-nav > .active > a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #FFFFFF;  /* Putih */
+    background-color: #00112a;
+  }
 
   /* Tambahkan ini */
   .img-carousel {
@@ -42,28 +65,4 @@ body {
     /* Atur tinggi tetap */
     overflow: hidden;
     position: relative;
-  }
-
-  .mySlides {
-    height: 100%;
-    display: none;
-  }
-
-  .mySlides img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    /* menjaga gambar tetap proporsional & mengisi area */
-  }
-
-  .mySlides .text-slide {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #052c65;
-    color: white;
-    padding: 20px;
-    box-sizing: border-box;
   }

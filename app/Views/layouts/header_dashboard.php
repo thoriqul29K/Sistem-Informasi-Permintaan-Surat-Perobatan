@@ -15,21 +15,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="<?= base_url('assets/script/dashboard.js') ?>"></script>
-
-    <style>
-        body {
-            padding-top: 70px;
-        }
-
-        footer {
-            margin-top: 50px;
-            padding: 20px 0;
-            background-color: #f5f5f5;
-            text-align: center;
-        }
-
-        /* Tambahkan style carousel, slides dsb bila perlu */
-    </style>
 </head>
 
 <body>
