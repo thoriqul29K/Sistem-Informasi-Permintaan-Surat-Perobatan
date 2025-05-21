@@ -1,0 +1,69 @@
+body {
+    padding-top: 70px;
+  }
+
+  footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+
+
+
+  /* Tambahkan ini */
+  .img-carousel {
+    width: 100%;
+    height: 600px;
+    /* Ubah tinggi sesuai kebutuhan, misalnya 600px */
+    object-fit: cover;
+    /* Menjaga proporsi gambar dan crop bagian luar */
+  }
+
+  /* Responsif untuk layar kecil */
+  @media (max-width: 768px) {
+    .img-carousel {
+      height: 300px;
+      /* Ukuran tinggi untuk mobile */
+    }
+
+    .carousel-caption h3 {
+      font-size: 18px;
+    }
+
+    .carousel-caption p {
+      font-size: 14px;
+    }
+  }
+
+  .carousel-container {
+    max-width: 100%;
+    height: 400px;
+    /* Atur tinggi tetap */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .mySlides {
+    height: 100%;
+    display: none;
+  }
+
+  .mySlides img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* menjaga gambar tetap proporsional & mengisi area */
+  }
+
+  .mySlides .text-slide {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #052c65;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
