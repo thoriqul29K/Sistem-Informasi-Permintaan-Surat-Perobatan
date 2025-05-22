@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `form_data` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nama_lengkap` varchar(70) NOT NULL,
   `nama_keluarga` varchar(70) NOT NULL,
   `np` int(10) UNSIGNED NOT NULL,
@@ -39,7 +39,9 @@ CREATE TABLE `form_data` (
   `rumah_sakit_dituju` varchar(50) NOT NULL,
   `status` enum('Menunggu','Terverifikasi','Disetujui','Ditolak') NOT NULL DEFAULT 'Menunggu',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `approved_at` datetime DEFAULT NULL
+  `approved_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_rs` (`rs_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -60,9 +62,10 @@ INSERT INTO `form_data` (`id`, `nama_lengkap`, `nama_keluarga`, `np`, `umur`, `j
 --
 
 CREATE TABLE `rs_list` (
-  `ID` int(2) NOT NULL,
+  `ID` int(2) NOT NULL AUTO_INCREMENT,
   `Nama_RS` varchar(120) NOT NULL,
-  `Jalan` varchar(150) NOT NULL
+  `Jalan` varchar(150) NOT NULL,
+  PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -85,11 +88,13 @@ INSERT INTO `rs_list` (`ID`, `Nama_RS`, `Jalan`) VALUES
 --
 
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nama` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `role` enum('user','admin','ruler') NOT NULL DEFAULT 'user'
+  `role` enum('user','admin','ruler') NOT NULL DEFAULT 'user',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -97,10 +102,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `nama`, `email`, `password`, `role`) VALUES
-(10, 'Muhammad Thoriqul Kirom', 'thoriqul29@gmail.com', 'c2b047327c0ef9e1aa5932b9221fcfa0ff9db13be1f2daf6b3bb5e01aa40df74', 'user'),
-(12, 'Admin 1', 'admin1@gmail.com', '6384ebf19658233b52aa822a94ab2536b6badc16458acd43f7f7053ed0106831', 'admin'),
-(13, 'User 2', 'user2@gmail.com', '6384ebf19658233b52aa822a94ab2536b6badc16458acd43f7f7053ed0106831', 'user'),
-(14, 'ruler 3', 'ruler3@gmail.com', '6384ebf19658233b52aa822a94ab2536b6badc16458acd43f7f7053ed0106831', 'ruler');
+(1, 'Muhammad Thoriqul Kirom', 'thoriqul29@gmail.com', 'c2b047327c0ef9e1aa5932b9221fcfa0ff9db13be1f2daf6b3bb5e01aa40df74', 'user'),
+(2, 'Admin 1', 'admin1@gmail.com', '6384ebf19658233b52aa822a94ab2536b6badc16458acd43f7f7053ed0106831', 'admin'),
+(3, 'User 2', 'user2@gmail.com', '6384ebf19658233b52aa822a94ab2536b6badc16458acd43f7f7053ed0106831', 'user'),
+(4, 'ruler 3', 'ruler3@gmail.com', '6384ebf19658233b52aa8221fcfa0ff&type替', 'ruler');
 
 --
 -- Triggers `users`
@@ -113,60 +118,12 @@ $$
 DELIMITER ;
 
 --
--- Indexes for dumped tables
+-- Foreign Key Constraints
 --
 
---
--- Indexes for table `form_data`
---
-ALTER TABLE `form_data`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_rs` (`rs_id`);
-
---
--- Indexes for table `rs_list`
---
-ALTER TABLE `rs_list`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `form_data`
---
-ALTER TABLE `form_data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
-
---
--- AUTO_INCREMENT for table `rs_list`
---
-ALTER TABLE `rs_list`
-  MODIFY `ID` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `form_data`
---
 ALTER TABLE `form_data`
   ADD CONSTRAINT `fk_rs` FOREIGN KEY (`rs_id`) REFERENCES `rs_list` (`ID`) ON UPDATE CASCADE;
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -20,7 +20,7 @@
 # APP
 #--------------------------------------------------------------------
 
-# app.baseURL = ''
+app.baseURL = 'https://e0b80f8a-2756-4106-befa-610c5a496db9-00-lqjdfgl3s3k0.sisko.replit.dev:8080/'
 # If you have trouble with `.`, you could also use `_`.
 # app_baseURL = ''
 # app.forceGlobalSecureRequests = false
@@ -30,13 +30,13 @@
 # DATABASE
 #--------------------------------------------------------------------
 
- database.default.hostname = sql12.freesqldatabase.com
- database.default.database = sql12769200
- database.default.username = sql12769200
- database.default.password = BHpwkEXA24
+ database.default.hostname = sipsp-sipsp-e071.c.aivencloud.com
+ database.default.database = db_surat_perobatan
+ database.default.username = avnadmin
+ database.default.password = AVNS_VwynvGrTGrKDqSYXHS_
  database.default.DBDriver = MySQLi
  database.default.DBPrefix =
- database.default.port = 3306
+ database.default.port = 27714
 
 # If you use MySQLi as tests, first update the values of Config\Database::$tests.
 # database.tests.hostname = localhost
