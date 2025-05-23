@@ -6,7 +6,10 @@ class LogoutController extends BaseController
 {
     public function index()
     {
+        // Hapus session
         session()->destroy();
-        return redirect()->to(base_url('/'));
+        // Hapus cookie remember_me
+        setcookie('remember_me', '', time() - 3600, '/', '', false, true);
+        return redirect()->to('/');
     }
 }

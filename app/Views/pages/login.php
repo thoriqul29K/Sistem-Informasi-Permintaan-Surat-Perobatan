@@ -28,7 +28,7 @@
          </div>
          <div class="login__check">
             <div class="login__check-box">
-               <input type="checkbox" class="login__check-input" id="user-check">
+               <input type="checkbox" name="remember" class="login__check-input" id="user-check">
                <label for="user-check" class="login__check-label">Ingat saya</label>
             </div>
             <a href="#" class="login__forgot">Lupa password?</a>
