@@ -31,7 +31,7 @@
                <input type="checkbox" name="remember" class="login__check-input" id="user-check">
                <label for="user-check" class="login__check-label">Ingat saya</label>
             </div>
-            <a href="#" class="login__forgot">Lupa password?</a>
+            <a href="<?= base_url('/reset-password') ?>" class="login__forgot">Reset Password?</a>
          </div>
          <button type="submit" class="login__button">Masuk</button>
          <div class="login__register">

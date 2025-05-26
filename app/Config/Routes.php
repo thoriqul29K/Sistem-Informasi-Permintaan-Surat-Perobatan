@@ -8,9 +8,17 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Pages::index');
 $routes->get('/tentang', 'Pages::tentang');
 $routes->get('/sop', 'Pages::sop');
-$routes->get('/login', 'LoginController::index');
-$routes->post('login', 'LoginController::login');
-$routes->get('logout', 'LogoutController::index');
+$routes->get('/login', 'AuthController::index');
+$routes->post('login', 'AuthController::login');
+$routes->get('logout', 'AuthController::logout');
+
+// Halaman form minta reset
+$routes->get('reset-password',      'AuthController::showResetForm');
+$routes->post('reset-password',     'AuthController::sendResetLink');
+// Form set password baru via token
+$routes->get('reset-password/(:segment)', 'AuthController::showNewPasswordForm/$1');
+$routes->post('reset-password/(:segment)', 'AuthController::resetPassword/$1');
+
 
 $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('form-permintaan-surat', 'FormController::SIPSP');
