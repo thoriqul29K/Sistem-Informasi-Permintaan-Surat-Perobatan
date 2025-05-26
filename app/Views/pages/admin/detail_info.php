@@ -1,3 +1,21 @@
+<?php
+
+use Endroid\QrCode\QrCode;
+use Endroid\QrCode\Writer\PngWriter;
+
+if (! empty($info['qr_token'])) {
+    $url    = base_url("ruler/sign/{$info['id']}/{$info['qr_token']}");
+    $qrCode = QrCode::create($url)
+        ->setSize(150)
+        ->setMargin(10);
+
+    $writer = new PngWriter();
+    $result = $writer->write($qrCode);
+
+    // sisipkan sebagai data-uri
+    $qrImage = $result->getDataUri();
+}
+?>
 <div class="card mt-3">
     <div class="card-header">
         Informasi Permintaan
@@ -25,6 +43,9 @@
         <?php endif; ?>
         <?php if (!empty($info['signed_at'])): ?>
             <p><strong>Tanggal Ditanda-tangan:</strong> <?= date('d-m-Y H:i', strtotime($info['signed_at'])) ?></p>
+        <?php endif; ?>
+        <?php if (!empty($info['qr_token'])): ?>
+            <p><strong>Qr code: <img src="<?= $qrImage ?>" alt="QR Code Tanda Tangan"></strong></p>
         <?php endif; ?>
     </div>
 </div>

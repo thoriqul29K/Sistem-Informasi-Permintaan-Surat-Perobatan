@@ -46,7 +46,12 @@ function convertMonthToRoman($month)
         /* Untuk mencetak dokumen di 1 lembar A4, kita atur margin dokumen, ukuran font, dan jarak spasi dengan teliti */
         @page {
             size: A4;
-            margin: 1.5cm;
+            margin-top: 1.2cm;
+            /* naikkan margin atas */
+            margin-bottom: 0.5cm;
+            /* naikkan margin bawah */
+            margin-left: 1.5cm;
+            margin-right: 1.5cm;
             /* margin cetak */
         }
 
@@ -54,10 +59,8 @@ function convertMonthToRoman($month)
             font-family: Arial, sans-serif;
             margin: 0;
             /* menggunakan @page untuk margin */
-            font-size: 8.3pt;
-            /* ukuran font lebih kecil */
-            line-height: 1.3;
-            /* jarak baris */
+            font-size: 10pt;
+            line-height: 1;
             color: #000;
         }
 
@@ -232,7 +235,7 @@ function convertMonthToRoman($month)
         <p>AVP SDM, Umum, Keuangan dan CSR</p>
         <br>
         <!-- Tampilkan QR sebagai gambar inline -->
-        <img src="<?= $qrImage ?>" alt="QR Code Tanda Tangan">
+        <img src="<?= $qrImage ?>" alt="QR Code Tanda Tangan" height="100px" width="auto">
         <br>
         <p><b>Yulian Sudarmawan</b></p>
     </div>
