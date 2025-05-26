@@ -35,6 +35,7 @@ $routes->group('', ['filter' => 'auth', 'admin'], function ($routes) {
 
 $routes->group('', ['filter' => 'auth', 'ruler'], function ($routes) {
     $routes->post('ruler/decide/(:num)',   'RulerController::decide/$1');
+    $routes->get('ruler/sign/(:num)/(:alphanum)', 'RulerController::sign/$1/$2');
 });
 
 $routes->group('', ['filter' => 'auth', 'role:admin,ruler'], function ($routes) {

@@ -61,10 +61,10 @@ class AdminController extends BaseController
             ->orderBy('form_data.created_at', 'DESC');
         if ($role === 'admin') {
             // admin lihat Menunggu, Disetujui, Ditolak
-            $builder->whereIn('form_data.status', ['Menunggu', 'Disetujui', 'Ditolak']);
+            $builder->whereIn('form_data.status', ['Menunggu', 'Disetujui', 'Ditolak', 'Tertandatangan']);
         } else if ($role === 'ruler') {
             // ruler hanya lihat Terverifikasi & Disetujui
-            $builder->whereIn('form_data.status', ['Terverifikasi', 'Disetujui']);
+            $builder->whereIn('form_data.status', ['Terverifikasi', 'Disetujui', 'Tertandatangan']);
         } else {
             // misal user biasa, dialihkan
             return redirect()->to('/')->with('error', 'Akses ditolak.');
@@ -92,7 +92,8 @@ class AdminController extends BaseController
         $this->formModel->update($id, [
             'status'      => 'Terverifikasi',
             'verified_by' => session()->get('user_id'),
-            'approved_at' => date('Y-m-d H:i:s'),
+            'verified_at' => date('Y-m-d H:i:s'),
+            'approved_at' => null,           // reset dulu
         ]);
         return redirect()->to('/list-info')
             ->with('message', 'Data sudah terverifikasi.');

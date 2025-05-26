@@ -43,7 +43,7 @@
     <?php endif; ?>
 
     <!-- 3) Cetak Ulang PDF (admin & ruler, tapi hanya ketika status Disetujui) -->
-    <?php if (in_array($role, ['admin', 'ruler']) && $info['status'] === 'Disetujui'): ?>
+    <?php if (in_array($role, ['admin', 'ruler']) && in_array($info['status'], ['Disetujui', 'Tertandatangan'])): ?>
         <a href="<?= base_url('admin/generate-pdf/' . $info['id']) ?>" class="btn btn-warning">
             Cetak Ulang PDF
         </a>

@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 
+use Endroid\QrCode\QrCode;
+use Endroid\QrCode\Writer\PngWriter;
+
 use App\Models\FormModel;
 
 class RulerController extends BaseController
@@ -29,20 +32,46 @@ class RulerController extends BaseController
 
     public function decide($id)
     {
-        // Pastikan hanya ruler yang bisa
         if (session()->get('role') !== 'ruler') {
             return redirect()->back()->with('error', 'Akses ditolak.');
         }
 
         $action = $this->request->getPost('action');
         if ($action === 'approve') {
-            $this->formModel->update($id, ['status' => 'Disetujui']);
+            // generate QR token (misal URL unik)
+            $token = bin2hex(random_bytes(16));
+            $url   = base_url("ruler/sign/{$id}/{$token}");
+
+            // simpan token ke DB (butuh kolom baru qr_token di form_data)
+            $this->formModel->update($id, [
+                'status'      => 'Disetujui',
+                'approved_at' => date('Y-m-d H:i:s'),
+                'qr_token'    => $token,
+            ]);
+
             return redirect()->to('/list-info')
-                ->with('message', 'Informasi disetujui, dan surat dicetak!.');
+                ->with('message', 'Data Disetujui!.');
         } else {
-            $this->formModel->update($id, ['status' => 'Ditolak']);
+            $this->formModel->update($id, [
+                'status'      => 'Ditolak',
+                'approved_at' => date('Y-m-d H:i:s'),
+            ]);
             return redirect()->to('/list-info')
-                ->with('message', 'Informasi ditolak!');
+                ->with('message', 'Data ditolak!.');
         }
+    }
+
+    public function sign($id, $token)
+    {
+        $info = $this->formModel->find($id);
+        if (! $info || $info['qr_token'] !== $token) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
+
+        // update status jadi Tertandatangan
+        $this->formModel->update($id, ['status' => 'Tertandatangan', 'signed_at' => date('Y-m-d H:i:s')]);
+
+        return redirect()->to('/list-info')
+            ->with('message', 'Data berhasil di tanda tangan!.');
     }
 }

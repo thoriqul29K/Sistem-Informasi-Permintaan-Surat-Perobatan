@@ -1,4 +1,21 @@
 <?php
+
+use Endroid\QrCode\QrCode;
+use Endroid\QrCode\Writer\PngWriter;
+
+if (! empty($info['qr_token'])) {
+    $url    = base_url("ruler/sign/{$info['id']}/{$info['qr_token']}");
+    $qrCode = QrCode::create($url)
+        ->setSize(150)
+        ->setMargin(10);
+
+    $writer = new PngWriter();
+    $result = $writer->write($qrCode);
+
+    // sisipkan sebagai data-uri
+    $qrImage = $result->getDataUri();
+}
+
 function convertMonthToRoman($month)
 {
     $romanNumerals = [
@@ -17,6 +34,7 @@ function convertMonthToRoman($month)
     ];
     return $romanNumerals[$month] ?? $month;
 }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -211,8 +229,11 @@ function convertMonthToRoman($month)
     </div>
 
     <div class="signature">
-        <p>AVP SDM, Umum, Keuangan dan CSR,</p>
-        <br><br>
+        <p>AVP SDM, Umum, Keuangan dan CSR</p>
+        <br>
+        <!-- Tampilkan QR sebagai gambar inline -->
+        <img src="<?= $qrImage ?>" alt="QR Code Tanda Tangan">
+        <br>
         <p><b>Yulian Sudarmawan</b></p>
     </div>
 

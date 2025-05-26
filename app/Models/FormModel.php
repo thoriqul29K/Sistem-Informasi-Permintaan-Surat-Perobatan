@@ -6,18 +6,24 @@ use CodeIgniter\Model;
 
 class FormModel extends Model
 {
-    protected $table      = 'form_data';
-    protected $primaryKey = 'id';
+    protected $table         = 'form_data';
+    protected $primaryKey    = 'id';
     protected $allowedFields = [
         'nama_lengkap',
-        'umur',
-        'jenis_kelamin',
         'nama_keluarga',
         'np',
+        'umur',
+        'jenis_kelamin',
         'jenjang_jabatan',
         'rs_id',
         'status',
+        'verified_at',
+        'approved_at',
         'created_at',
-        'approved_at'
+        'qr_token',
+        'signed_at'
     ];
+
+    // Opsional: helper untuk status
+    public const STATUS_TERTANDA = 'Tertandatangan';
 }
