@@ -2,7 +2,7 @@
 <div class="formbold-main-wrapper">
   <div class="formbold-form-wrapper">
     <div class="logo-container">
-      <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/logo BUMN.png') ?>" />
+      <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/Logo BUMN.png') ?>" />
       <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/Akhlak.png') ?>" />
       <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/Logo PTBA 750x140px.png') ?>" />
     </div>
