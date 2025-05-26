@@ -16,8 +16,15 @@
 
 
         <p><strong>Status:</strong> <?= esc($info['status']) ?></p>
+        <?php if (!empty($info['verified_at'])): ?>
+            <p><strong>Tanggal Diverifikasi:</strong> <?= date('d-m-Y H:i', strtotime($info['verified_at'])) ?></p>
+        <?php endif; ?>
+
         <?php if (!empty($info['approved_at'])): ?>
             <p><strong>Tanggal Disetujui:</strong> <?= date('d-m-Y H:i', strtotime($info['approved_at'])) ?></p>
+        <?php endif; ?>
+        <?php if (!empty($info['signed_at'])): ?>
+            <p><strong>Tanggal Ditanda-tangan:</strong> <?= date('d-m-Y H:i', strtotime($info['signed_at'])) ?></p>
         <?php endif; ?>
     </div>
 </div>
