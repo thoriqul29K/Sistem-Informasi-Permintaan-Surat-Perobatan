@@ -12,6 +12,7 @@ class FormModel extends Model
         'nama_lengkap',
         'nama_keluarga',
         'np',
+        'email',
         'umur',
         'jenis_kelamin',
         'jenjang_jabatan',

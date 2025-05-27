@@ -30,6 +30,28 @@ class AdminController extends BaseController
     }
 
 
+    private function fetchWithRs(int $id): array
+    {
+        $info = $this->formModel
+            ->select('form_data.*, rs_list.Nama_RS AS nama_rs, rs_list.Jalan AS jalan_rs')
+            ->join('rs_list', 'form_data.rs_id = rs_list.ID', 'left')
+            ->where('form_data.id', $id)
+            ->first();
+
+        if (! $info) {
+            throw PageNotFoundException::forPageNotFound("Data dengan ID {$id} tidak ditemukan.");
+        }
+
+        // If the FK was missing or invalid, fallback to dash
+        if (empty($info['nama_rs'])) {
+            $info['nama_rs']  = '-';
+            $info['jalan_rs'] = '';
+        }
+
+        return $info;
+    }
+
+
     private function buildLogoDataUri(): string
     {
         $path = FCPATH . 'assets/img/Logo PTBA 750x140px.png';
@@ -81,23 +103,44 @@ class AdminController extends BaseController
         $info = $this->fetchWithRs($id);
         return view('pages/admin/detail_info', ['info' => $info]);
     }
-
     public function verify($id)
     {
-        // Hanya admin (role=admin) yang dapat
+        // Hanya admin yang boleh
         if (session()->get('role') !== 'admin') {
             return redirect()->back()->with('error', 'Akses ditolak.');
         }
 
+        $info = $this->fetchWithRs($id);
+
+        // 2) Update status dan timestamps
         $this->formModel->update($id, [
-            'status'      => 'Terverifikasi',
-            'verified_by' => session()->get('user_id'),
-            'verified_at' => date('Y-m-d H:i:s'),
-            'approved_at' => null,           // reset dulu
+            'status'       => 'Terverifikasi',
+            #'verified_by'  => session()->get('user_id'),
+            'verified_at'  => date('Y-m-d H:i:s'),
+            'approved_at'  => null,           // reset kembali approved_at
         ]);
+
+        // 3) Kirim notificasi email ke user
+        $emailService = \Config\Services::email();
+        $emailService->setTo($info['email']);
+        $emailService->setSubject("Permintaan Surat Anda (#{$id}) Telah Diverifikasi");
+        $emailService->setMessage("
+            Hai {$info['nama_lengkap']},<br><br>
+            Permintaan surat perobatan Anda:<br>
+            &mdash; <b>ID</b>: {$id}<br>
+            &mdash; <b>Nama Keluarga</b>: {$info['nama_keluarga']}<br>
+            &mdash; <b>Rumah Sakit</b>: {$info['nama_rs']}<br><br>
+            telah <b>diverifikasi</b> oleh Admin TU.<br><br>
+            Silakan tunggu proses selanjutnya di sistem kami.<br><br>
+            Salam,<br>
+            <i>Sistem Surat Perobatan PTBA</i>
+        ");
+        $emailService->send();
+
         return redirect()->to('/list-info')
-            ->with('message', 'Data sudah terverifikasi.');
+            ->with('message', 'Data terverifikasi!');
     }
+
 
 
     public function generatePdf($id)
@@ -128,27 +171,6 @@ class AdminController extends BaseController
         // Hapus data
         $this->formModel->delete($id);
         return redirect()->to('/list-info')->with('message', 'Data berhasil dihapus.');
-    }
-
-    private function fetchWithRs(int $id): array
-    {
-        $info = $this->formModel
-            ->select('form_data.*, rs_list.Nama_RS AS nama_rs, rs_list.Jalan AS jalan_rs')
-            ->join('rs_list', 'form_data.rs_id = rs_list.ID', 'left')
-            ->where('form_data.id', $id)
-            ->first();
-
-        if (! $info) {
-            throw PageNotFoundException::forPageNotFound("Data dengan ID {$id} tidak ditemukan.");
-        }
-
-        // If the FK was missing or invalid, fallback to dash
-        if (empty($info['nama_rs'])) {
-            $info['nama_rs']  = '-';
-            $info['jalan_rs'] = '';
-        }
-
-        return $info;
     }
 
     private function getLogoDataUri(): string

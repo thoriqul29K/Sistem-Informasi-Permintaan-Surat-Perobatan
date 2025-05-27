@@ -29,24 +29,12 @@ class FormController extends BaseController
 
     public function simpan()
     {
-        $rules = [
-            'nama_lengkap'    => 'required|max_length[70]',
-            'nama_keluarga'   => 'required|max_length[70]',
-            'np'              => 'required|integer',
-            'umur'            => 'required|integer',
-            'jenis_kelamin'   => 'required|in_list[Laki-laki,Perempuan]',
-            'jenjang_jabatan' => 'required|max_length[70]',
-            'rumah_sakit_dituju' => 'required|integer'
-        ];
-
-        if (! $this->validate($rules)) {
-            // Simpan pesan kesalahan ke flashdata
-            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
-        }
 
         $data = array_map('trim', $this->request->getPost());
         $data['rs_id'] = $data['rumah_sakit_dituju'];
         unset($data['rumah_sakit_dituju']);
+        $data['email'] = session()->get('email');
+        $data['status'] = 'Menunggu';
 
         $this->formModel->insert($data);
 
