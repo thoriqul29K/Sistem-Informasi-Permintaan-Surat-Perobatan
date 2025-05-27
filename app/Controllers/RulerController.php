@@ -98,6 +98,17 @@ class RulerController extends BaseController
                 'qr_token'    => $token,
             ]);
 
+            // RENDER DAN SIMPAN PDF
+            $info = $this->fetchWithRs($id);
+            $html = view('pages/admin/template_surat', [
+                'info'        => $info,
+                'logoDataUri' => $this->getLogoDataUri(),
+            ]);
+            $dompdf  = $this->renderDompdf($html);
+            $pdfData = $dompdf->output();
+            $filePath = WRITEPATH . "uploads/surat_{$id}.pdf";
+            file_put_contents($filePath, $pdfData);
+
             $email = \Config\Services::email();
             $email->setTo($info['email']);
             $email->setSubject("Permintaan #{$info['id']} Anda Telah Disetujui!");

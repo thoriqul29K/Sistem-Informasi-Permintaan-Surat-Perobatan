@@ -118,16 +118,6 @@ class AdminController extends BaseController
             #'verified_by'  => session()->get('user_id'),
             'verified_at'  => date('Y-m-d H:i:s'),
         ]);
-        // RENDER DAN SIMPAN PDF
-        $info = $this->fetchWithRs($id);
-        $html = view('pages/admin/template_surat', [
-            'info'        => $info,
-            'logoDataUri' => $this->getLogoDataUri(),
-        ]);
-        $dompdf  = $this->renderDompdf($html);
-        $pdfData = $dompdf->output();
-        $filePath = WRITEPATH . "uploads/surat_{$id}.pdf";
-        file_put_contents($filePath, $pdfData);
 
         // 3) Kirim notificasi email ke user
         $emailService = \Config\Services::email();
