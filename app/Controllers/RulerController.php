@@ -64,20 +64,6 @@ class RulerController extends BaseController
         return $dompdf;
     }
 
-    public function index()
-    {
-        // Ambil semua entri “Terverifikasi” plus data RS
-        $data['list_info'] = $this->formModel
-            ->select('form_data.*, rs_list.Nama_RS AS nama_rs, rs_list.Jalan AS jalan_rs')
-            ->join('rs_list', 'form_data.rs_id = rs_list.ID', 'left')
-            ->where('form_data.status', 'Terverifikasi')
-            ->orderBy('form_data.created_at', 'DESC')
-            ->findAll();
-
-
-        return view('pages/ruler/list_info', $data);
-    }
-
     public function decide($id)
     {
         $info = $this->fetchWithRs($id);
