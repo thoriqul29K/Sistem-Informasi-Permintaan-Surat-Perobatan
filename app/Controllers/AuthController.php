@@ -52,7 +52,8 @@ class AuthController extends BaseController
         // Cari user
         $user = $model->where('email', $email)->first();
         if (! $user || hash('sha256', $password) !== $user['password']) {
-            return redirect()->back()->with('error', 'Email atau password salah.');
+            return redirect()->to('/login')
+                ->with('message', 'Email atau password salah!');
         }
 
         // Set session

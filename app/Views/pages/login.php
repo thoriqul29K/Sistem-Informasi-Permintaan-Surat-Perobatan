@@ -6,6 +6,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- REMIXICONS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+   <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
    <!-- CSS -->
    <link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>">
    <title>Login | PTBA</title>
@@ -33,9 +36,12 @@
             </div>
             <a href="<?= base_url('/reset-password') ?>" class="login__forgot">Reset Password?</a>
          </div>
+         <?php if (session()->getFlashdata('message')): ?>
+            <div class="alert alert-danger">
+               <?= session()->getFlashdata('message') ?>
+            </div>
+         <?php endif; ?>
          <button type="submit" class="login__button">Masuk</button>
-         <div class="login__register">
-         </div>
       </form>
    </div>
 </body>
