@@ -2,9 +2,7 @@
 <div class="formbold-main-wrapper">
   <div class="formbold-form-wrapper">
     <div class="logo-container">
-      <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/Logo BUMN.png') ?>" />
-      <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/Akhlak.png') ?>" />
-      <img class="formbold-img" width="100" height="100" src="<?= base_url('assets/img/Logo PTBA 750x140px.png') ?>" />
+      <img class="formbold-img" width="auto" height="300" src="<?= base_url('assets/img/Logo PTBA 750x140px.png') ?>" />
     </div>
 
     <?php if (session()->getFlashdata('success')): ?>
@@ -274,8 +272,8 @@
 
     /* Ukuran gambar logo diperkecil */
     .logo-container .formbold-img {
-      width: 60px !important;
-      height: 60px !important;
+      width: 200px !important;
+      height: auto !important;
     }
 
     /* Judul dibuat lebih ringkas dan teks rata-tengah */

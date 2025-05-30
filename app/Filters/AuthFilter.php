@@ -36,7 +36,8 @@ class AuthFilter implements FilterInterface
         }
 
         if (! session()->has('user_id')) {
-            return redirect()->to(base_url('/'));
+            session()->setFlashdata('error', 'Silakan login terlebih dahulu.');
+            return redirect()->to('/');
         }
     }
 

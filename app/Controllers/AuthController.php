@@ -31,11 +31,7 @@ class AuthController extends BaseController
         if (session()->get('user_id')) {
             // Jika sudah login, redirect ke halaman sesuai role
             $role = session()->get('role');
-            if ($role === 'admin' || $role === 'ruler') {
-                return redirect()->to('/list-info');
-            } else {
-                return redirect()->to('/form-permintaan-surat');
-            }
+            return redirect()->to('/');
         }
         return view('pages/login');
     }
@@ -85,11 +81,7 @@ class AuthController extends BaseController
         }
 
         // Redirect sesuai role
-        return redirect()->to(
-            in_array($user['role'], ['admin', 'ruler'])
-                ? '/list-info'
-                : '/form-permintaan-surat'
-        );
+        return redirect()->to('/');
     }
 
 

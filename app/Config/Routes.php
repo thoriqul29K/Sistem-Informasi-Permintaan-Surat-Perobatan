@@ -33,7 +33,7 @@ $routes->group('', ['filter' => 'auth', 'admin'], function ($routes) {
     // Opsional: route untuk penghapusan otomatis (untuk testing CLI)
 });
 
-$routes->group('', ['filter' => 'auth', 'ruler'], function ($routes) {
+$routes->group('', ['filter' => 'auth', 'role:ruler'], function ($routes) {
     $routes->post('ruler/decide/(:num)',   'RulerController::decide/$1');
     $routes->get('ruler/sign/(:num)/(:alphanum)', 'RulerController::sign/$1/$2');
 });

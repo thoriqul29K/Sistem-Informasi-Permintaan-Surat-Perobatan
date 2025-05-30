@@ -127,6 +127,9 @@ class RulerController extends BaseController
     }
     public function sign($id, $token)
     {
+        if (session()->get('role') !== 'ruler') {
+            return redirect()->back()->with('error', 'Akses ditolak.');
+        }
         // update status
         $this->formModel->update($id, [
             'status'    => 'Tertandatangan',
