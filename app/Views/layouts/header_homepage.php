@@ -35,14 +35,14 @@
 
             <div class="collapse navbar-collapse" id="nav-menu">
                 <ul class="nav navbar-nav">
-                    <li class="<?= uri_string() === '/' ? 'active' : '' ?>">
+                    <li class="<?= uri_string() === '' ? 'active' : '' ?>">
                         <a href="<?= base_url('/') ?>">Beranda</a>
                     </li>
                     <li class="<?= uri_string() === 'tentang' ? 'active' : '' ?>">
                         <a href="<?= base_url('/tentang') ?>">Tentang</a>
                     </li>
-                    <li class="<?= uri_string() === 'Alur Permintaan/Pengajuan' ? 'active' : '' ?>">
-                        <a href="<?= base_url('/sop') ?>">SOP</a>
+                    <li class="<?= uri_string() === 'sop' ? 'active' : '' ?>">
+                        <a href="<?= base_url('/sop') ?>">Alur Permintaan/Pengajuan</a>
                     </li>
                     <?php if (session()->has('user_id')): ?>
                         <li class="<?= uri_string() === 'progress_bar' ? 'active' : '' ?>">
