@@ -50,4 +50,4 @@ $routes->get('notifications/markread/(:num)', 'NotificationController::markRead/
 $routes->get('notifications', 'NotificationController::index');
 
 $routes->get('progress_bar', 'Pages::progress_bar', ['filter' => 'auth']);
-$routes->get('form/download-pdf/(:num)', 'FormController::downloadPdf/$1');
+$routes->get('form/download-pdf/(:num)', 'FormController::downloadPdf/$1', ['filter' => 'auth']);

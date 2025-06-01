@@ -195,7 +195,6 @@ class RulerController extends BaseController
         $email->attach(WRITEPATH . "uploads/surat_{$id}.pdf");
         $email->send();
 
-        return redirect()->to('/list-info')
-            ->with('message', 'Surat berhasil ditandatangani!');
+        return redirect()->back()->with('message', 'Surat berhasil ditandatangani!');
     }
 }

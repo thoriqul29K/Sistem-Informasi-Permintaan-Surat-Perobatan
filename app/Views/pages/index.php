@@ -5,7 +5,9 @@
     <p class="text-danger"><?= session()->getFlashdata('error') ?></p>
   </div>
 <?php elseif (session()->getFlashdata('message')): ?>
-  <p class="text-success"><?= session()->getFlashdata('message') ?></p>
+  <div class="alert alert-success">
+    <p class="text-success"><?= session()->getFlashdata('message') ?></p>
+  </div>
 <?php endif; ?>
 <!-- ✅ CAROUSEL UTAMA -->
 <div class="container">

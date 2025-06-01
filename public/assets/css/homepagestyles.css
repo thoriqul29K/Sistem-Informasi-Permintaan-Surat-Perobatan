@@ -82,3 +82,22 @@ body {
     background-color: #f8d7da;
     color: #721c24;
   }
+
+/* Efek zoom saat hover pada Bootstrap 3 panel */
+.panel-hover {
+  transition: transform 0.3s ease;  /* Animasi transform selama 0.3 detik */
+  position: relative;               /* Agar z-index dapat bekerja */
+}
+
+.panel-hover:hover {
+  transform: scale(1.02);           /* Perbesar 2% saat hover */
+  z-index: 2;                       /* Supaya panel menonjol di atas */
+}
+
+/* Opsional: styling divider agar kontras dengan panel-body */
+.panel-body hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-color: #ddd;  /* Warna abu-abu terang */
+}
+
