@@ -1,5 +1,8 @@
 <?= $this->include('layouts/header') ?>
 <div class="formbold-main-wrapper">
+  <a href="<?= base_url('/') ?>" class="back-btn btn btn-secondary btn-sm">
+    ← Kembali
+  </a>
   <div class="formbold-form-wrapper">
     <div class="logo-container">
       <img class="formbold-img" width="auto" height="300" src="<?= base_url('assets/img/Logo PTBA 750x140px.png') ?>" />
@@ -47,13 +50,19 @@
       <div class="formbold-mb-3">
         <label for="np" class="formbold-form-label">Nomor Pegawai</label>
         <input
-          type="number"
+          type="text"
           name="np"
           id="np"
           class="formbold-form-input"
           required
-          onkeydown="if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(event.key)) event.preventDefault();" />
-
+          pattern="[0-9]{1,10}"
+          maxlength="10"
+          data-toggle="tooltip"
+          data-placement="right"
+          title="NP harus berupa angka (0–9) dan maksimal 10 digit." />
+        <div class="invalid-feedback">
+          Silakan masukkan NP berupa angka 0-9 dan 10 digit.
+        </div>
       </div>
 
       <div class="formbold-mb-3">
@@ -128,6 +137,7 @@
   }
 
   .formbold-main-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,6 +146,14 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  /* Styling untuk tombol kembali agar selalu di kiri atas */
+  .back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
   }
 
   .formbold-form-wrapper {

@@ -18,6 +18,9 @@
    <div class="login">
       <img src="<?= base_url('assets/img/login-bg.png') ?>" alt="image" class="login__bg">
       <form action="<?= base_url('login') ?>" method="POST" class="login__form">
+         <div>
+            <a href="<?= base_url('/') ?>" style="color: #5f0d57; background-color:white;" class="back-btn btn btn-secondary btn-sm">← Kembali</a>
+         </div>
          <h1 class="login__title">Masuk</h1>
          <div class="login__inputs">
             <div class="login__box">
@@ -36,8 +39,13 @@
             </div>
             <a href="<?= base_url('/reset-password') ?>" class="login__forgot">Reset Password?</a>
          </div>
-         <?php if (session()->getFlashdata('message')): ?>
+         <?php if (session()->getFlashdata('error')): ?>
             <div class="alert alert-danger">
+               <?= session()->getFlashdata('error') ?>
+            </div>
+         <?php endif; ?>
+         <?php if (session()->getFlashdata('message')): ?>
+            <div class="alert alert-message">
                <?= session()->getFlashdata('message') ?>
             </div>
          <?php endif; ?>

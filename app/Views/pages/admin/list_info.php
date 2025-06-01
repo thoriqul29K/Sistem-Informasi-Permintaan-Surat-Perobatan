@@ -4,7 +4,11 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
 <div class="container mt-5">
-    <h2>List Informasi Permintaan Surat</h2>
+    <div>
+        <a href="<?= base_url('/') ?>" style="color: white; background-color:black;" class="back-btn btn btn-secondary btn-sm">← Kembali</a>
+    </div>
+
+    <h2><br>List Informasi Permintaan Surat</h2>
     <?php if (session()->getFlashdata('message')): ?>
         <div class="alert alert-success">
             <?= session()->getFlashdata('message') ?>

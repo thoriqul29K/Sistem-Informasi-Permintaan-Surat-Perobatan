@@ -1,4 +1,4 @@
-<?= $this->include('layouts/header_dashboard') ?>
+<?= $this->include('layouts/header_homepage') ?>
 <!-- ✅ ISI KONTEN HALAMAN -->
 <div class="container">
   <h2>Standar Operasional Prosedur (SOP)</h2>
@@ -12,4 +12,4 @@
   </ol>
 </div>
 
-<?= $this->include('layouts/footer_dashboard') ?>
+<?= $this->include('layouts/footer_homepage') ?>

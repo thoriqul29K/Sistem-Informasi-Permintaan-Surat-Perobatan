@@ -43,3 +43,10 @@ $routes->group('', ['filter' => 'auth', 'role:admin,ruler'], function ($routes) 
     $routes->get('admin/generate-pdf/(:num)', 'AdminController::generatePdf/$1');
     $routes->get('admin/detail/(:num)', 'AdminController::detail/$1');
 });
+
+// Menandai satu notifikasi sebagai dibaca
+$routes->get('notifications/markread/(:num)', 'NotificationController::markRead/$1');
+// Menampilkan halaman semua notifikasi
+$routes->get('notifications', 'NotificationController::index');
+
+$routes->get('progress_bar', 'NotificationController::progress_bar', ['filter' => 'auth']);

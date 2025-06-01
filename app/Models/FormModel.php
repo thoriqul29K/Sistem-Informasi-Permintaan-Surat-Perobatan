@@ -22,7 +22,8 @@ class FormModel extends Model
         'approved_at',
         'created_at',
         'qr_token',
-        'signed_at'
+        'signed_at',
+        'created_by'
     ];
 
     // Opsional: helper untuk status

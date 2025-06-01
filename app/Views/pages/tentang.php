@@ -1,4 +1,4 @@
-<?= $this->include('layouts/header_dashboard') ?>
+<?= $this->include('layouts/header_homepage') ?>
 <!-- ✅ ISI KONTEN HALAMAN -->
 <div class="container">
   <h2>Tentang PT Bukit Asam</h2>
@@ -9,4 +9,4 @@
     Sistem digital surat perobatan ini bertujuan untuk meningkatkan efisiensi proses pengajuan bantuan dana perobatan pegawai, mengurangi proses manual, serta memberikan akses informasi yang mudah bagi pegawai dan pimpinan.
   </p>
 </div>
-<?= $this->include('layouts/footer_dashboard') ?>
+<?= $this->include('layouts/footer_homepage') ?>

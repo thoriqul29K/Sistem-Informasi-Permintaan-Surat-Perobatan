@@ -8,6 +8,7 @@ use Dompdf\Dompdf;
 use Dompdf\Options;
 use App\Models\RSModel;
 use App\Models\FormModel;
+use App\Models\NotificationModel;
 
 class RulerController extends BaseController
 {
@@ -67,6 +68,7 @@ class RulerController extends BaseController
     public function decide($id)
     {
         $info = $this->fetchWithRs($id);
+        $notifModel = new NotificationModel();
         if (session()->get('role') !== 'ruler') {
             return redirect()->back()->with('error', 'Akses ditolak.');
         }
@@ -82,6 +84,18 @@ class RulerController extends BaseController
                 'status'      => 'Disetujui',
                 'approved_at' => date('Y-m-d H:i:s'),
                 'qr_token'    => $token,
+            ]);
+
+            $notifModel->insert([
+                'user_id'    => $info['created_by'], // misal kolom tambahan `created_by` di form_data
+                'type'       => 'form_approved',
+                'data'       => json_encode([
+                    'form_id'       => $id,
+                    'nama_lengkap'  => $info['nama_lengkap'],
+                    'nama_keluarga' => $info['nama_keluarga'],
+                    'nama_rs'       => $info['nama_rs']
+                ]),
+                'created_at' => date('Y-m-d H:i:s')
             ]);
 
             // RENDER DAN SIMPAN PDF
@@ -112,6 +126,17 @@ class RulerController extends BaseController
                 'status'      => 'Ditolak',
                 'approved_at' => date('Y-m-d H:i:s'),
             ]);
+            $notifModel->insert([
+                'user_id'    => $info['created_by'],
+                'type'       => 'form_rejected',
+                'data'       => json_encode([
+                    'form_id'       => $id,
+                    'nama_lengkap'  => $info['nama_lengkap'],
+                    'nama_keluarga' => $info['nama_keluarga'],
+                    'nama_rs'       => $info['nama_rs']
+                ]),
+                'created_at' => date('Y-m-d H:i:s')
+            ]);
             $email = \Config\Services::email();
             $email->setTo($info['email']);
             $email->setSubject("Mohon Maaf, Permintaan #{$info['id']} Anda Telah Ditolak!");
@@ -135,6 +160,20 @@ class RulerController extends BaseController
             'status'    => 'Tertandatangan',
             'signed_at' => date('Y-m-d H:i:s'),
         ]);
+        $info = $this->fetchWithRs($id);
+        $notifModel = new NotificationModel();
+        $notifModel->insert([
+            'user_id'    => $info['created_by'],
+            'type'       => 'form_signed',
+            'data'       => json_encode([
+                'form_id'       => $id,
+                'nama_lengkap'  => $info['nama_lengkap'],
+                'nama_keluarga' => $info['nama_keluarga'],
+                'nama_rs'       => $info['nama_rs']
+            ]),
+            'created_at' => date('Y-m-d H:i:s')
+        ]);
+
 
         // LOKASI FILE PDF YANG SUDAH DIBUAT SAAT VERIFIKASI
         $filePath = WRITEPATH . "uploads/surat_{$id}.pdf";

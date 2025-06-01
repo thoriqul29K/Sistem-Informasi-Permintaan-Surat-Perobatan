@@ -119,6 +119,26 @@ class AdminController extends BaseController
             'verified_at'  => date('Y-m-d H:i:s'),
         ]);
 
+        // 1) Ambil daftar ruler
+        $userModel = new \App\Models\UserModel();
+        $rulers = $userModel->where('role', 'ruler')->findAll();
+
+        $notifModel = new \App\Models\NotificationModel();
+        $info = $this->fetchWithRs($id); // sudah memuat email pemilik, nama_rs, dsb
+        foreach ($rulers as $ruler) {
+            $notifModel->insert([
+                'user_id'    => $ruler['id'],
+                'type'       => 'form_verified',
+                'data'       => json_encode([
+                    'form_id'       => $id,
+                    'nama_lengkap'  => $info['nama_lengkap'],
+                    'nama_keluarga' => $info['nama_keluarga'],
+                    'nama_rs'       => $info['nama_rs']
+                ]),
+                'created_at' => date('Y-m-d H:i:s')
+            ]);
+        }
+
         // 3) Kirim notificasi email ke user
         $emailService = \Config\Services::email();
         $emailService->setTo($info['email']);

@@ -1,4 +1,4 @@
-<?= $this->include('layouts/header_dashboard') ?>
+<?= $this->include('layouts/header_homepage') ?>
 
 <?php if (session()->getFlashdata('error')): ?>
   <div class="alert alert-danger">
@@ -72,4 +72,4 @@
 </div>
 </div>
 </div>
-<?= $this->include('layouts/footer_dashboard') ?>
+<?= $this->include('layouts/footer_homepage') ?>
