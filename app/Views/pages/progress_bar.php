@@ -98,7 +98,7 @@
                         <p><strong>Verifikasi Admin:</strong>
                             <?= $form['verified_at'] ? date('d-m-Y H:i', strtotime($form['verified_at'])) : '-' ?>
                         </p>
-                        <p><strong>Disetujui Pimpinan:</strong>
+                        <p><strong>Ditolak/Disetujui Pimpinan:</strong>
                             <?= $form['approved_at'] ? date('d-m-Y H:i', strtotime($form['approved_at'])) : '-' ?>
                         </p>
                         <p><strong>Tanda Tangan:</strong>
