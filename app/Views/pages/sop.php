@@ -1,7 +1,7 @@
 <?= $this->include('layouts/header_homepage') ?>
 <!-- ✅ ISI KONTEN HALAMAN -->
 <div class="container">
-  <h2>Standar Operasional Prosedur (SOP)</h2>
+  <h2>Alur Permintaan/ Pengajuan</h2>
   <ol>
     <li>Pegawai login ke sistem menggunakan akun yang sudah terdaftar.</li>
     <li>Mengisi form permohonan surat perobatan secara digital.</li>

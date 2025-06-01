@@ -41,7 +41,7 @@
                     <li class="<?= uri_string() === 'tentang' ? 'active' : '' ?>">
                         <a href="<?= base_url('/tentang') ?>">Tentang</a>
                     </li>
-                    <li class="<?= uri_string() === 'sop' ? 'active' : '' ?>">
+                    <li class="<?= uri_string() === 'Alur Permintaan/Pengajuan' ? 'active' : '' ?>">
                         <a href="<?= base_url('/sop') ?>">SOP</a>
                     </li>
                     <?php if (session()->has('user_id')): ?>
