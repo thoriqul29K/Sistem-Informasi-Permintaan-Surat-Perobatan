@@ -49,4 +49,5 @@ $routes->get('notifications/markread/(:num)', 'NotificationController::markRead/
 // Menampilkan halaman semua notifikasi
 $routes->get('notifications', 'NotificationController::index');
 
-$routes->get('progress_bar', 'NotificationController::progress_bar', ['filter' => 'auth']);
+$routes->get('progress_bar', 'Pages::progress_bar', ['filter' => 'auth']);
+$routes->get('form/download-pdf/(:num)', 'FormController::downloadPdf/$1');

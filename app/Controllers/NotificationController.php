@@ -52,13 +52,4 @@ class NotificationController extends BaseController
         // Setelah mark read, redirect kembali ke halaman notifikasi
         return redirect()->to('/notifications')->with('message', 'Notifikasi telah dibaca.');
     }
-
-    public function progress_bar()
-    {
-        if (! session()->has('user_id')) {
-            return redirect()->to('/login');
-        }
-        // Kita akan me-load view di atas
-        return view('pages/progress_bar');
-    }
 }

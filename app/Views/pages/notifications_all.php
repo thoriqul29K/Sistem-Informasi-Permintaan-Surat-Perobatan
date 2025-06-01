@@ -14,16 +14,16 @@
                         $text = "Form ID {$data['form_id']} baru dikirim oleh {$data['nama_lengkap']}";
                         break;
                     case 'form_verified':
-                        $text = "Form ID {$data['form_id']} telah diverifikasi";
+                        $text = "Form ID {$data['form_id']} milik {$data['nama_lengkap']} telah diverifikasi";
                         break;
                     case 'form_approved':
-                        $text = "Form ID {$data['form_id']} disetujui";
+                        $text = "Form ID {$data['form_id']} milik {$data['nama_lengkap']} telah disetujui";
                         break;
                     case 'form_rejected':
-                        $text = "Form ID {$data['form_id']} ditolak";
+                        $text = "Form ID {$data['form_id']} milik {$data['nama_lengkap']} telah ditolak";
                         break;
                     case 'form_signed':
-                        $text = "Form ID {$data['form_id']} telah tertandatangan";
+                        $text = "Form ID {$data['form_id']} milik {$data['nama_lengkap']} telah tertandatangan";
                         break;
                     default:
                         $text = "Notifikasi baru";

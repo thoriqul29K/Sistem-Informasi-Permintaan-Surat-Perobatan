@@ -69,4 +69,24 @@ class FormController extends BaseController
         // Simpan pesan sukses ke flashdata
         return redirect()->back()->with('success', 'Informasi berhasil dikirim.');
     }
+
+    public function downloadPdf($id)
+    {
+        // Ambil data form
+        $form = $this->formModel->find($id);
+
+        // Cek: form milik user saat ini dan status = Tertandatangan
+        if (! $form || $form['created_by'] !== session('user_id') || $form['status'] !== 'Tertandatangan') {
+            return redirect()->back()->with('error', 'Anda tidak memiliki akses atau surat belum ditandatangani.');
+        }
+
+        // Path file PDF yang sudah disimpan saat generate oleh admin
+        $filePath = WRITEPATH . 'uploads/surat_' . $id . '.pdf';
+        if (! file_exists($filePath)) {
+            return redirect()->back()->with('error', 'File PDF tidak ditemukan.');
+        }
+
+        // Kirim file sebagai download
+        return $this->response->download($filePath, null);
+    }
 }

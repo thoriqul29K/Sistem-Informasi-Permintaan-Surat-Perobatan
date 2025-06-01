@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Models\FormModel;
 use App\Models\RSModel;
+use App\Models\UserModel;
+use App\Models\NotificationModel;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 use PHPMailer\PHPMailer\PHPMailer;
@@ -120,10 +122,10 @@ class AdminController extends BaseController
         ]);
 
         // 1) Ambil daftar ruler
-        $userModel = new \App\Models\UserModel();
+        $userModel = new UserModel();
         $rulers = $userModel->where('role', 'ruler')->findAll();
 
-        $notifModel = new \App\Models\NotificationModel();
+        $notifModel = new NotificationModel();
         $info = $this->fetchWithRs($id); // sudah memuat email pemilik, nama_rs, dsb
         foreach ($rulers as $ruler) {
             $notifModel->insert([
@@ -165,6 +167,9 @@ class AdminController extends BaseController
     public function generatePdf($id)
     {
         // Save PDF on disk and trigger download
+        if (!in_array(session('role'), ['admin', 'ruler'])) {
+            return redirect()->back()->with('error', 'Akses ditolak.');
+        }
         $info    = $this->fetchWithRs($id);
         $html    = view('pages/admin/template_surat', [
             'info'        => $info,

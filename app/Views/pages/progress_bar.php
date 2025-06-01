@@ -7,7 +7,13 @@
     $formModel = new \App\Models\FormModel();
     $userForms = $formModel->where('created_by', session('user_id'))->findAll();
     ?>
-
+    <?php if (session()->getFlashdata('error')): ?>
+        <div class="alert alert-danger">
+            <p class="text-danger"><?= session()->getFlashdata('error') ?></p>
+        </div>
+    <?php elseif (session()->getFlashdata('message')): ?>
+        <p class="text-success"><?= session()->getFlashdata('message') ?></p>
+    <?php endif; ?>
     <?php if (empty($userForms)): ?>
         <p>Anda belum mengajukan permintaan surat perobatan.</p>
     <?php else: ?>
@@ -19,7 +25,6 @@
                 </div>
                 <div class="panel-body">
                     <?php
-                    // Tentukan persentase progress berdasarkan status
                     switch ($form['status']) {
                         case 'Menunggu':
                             $percent = 25;
@@ -47,17 +52,31 @@
                     }
                     ?>
                     <p><?= esc($label) ?></p>
+
+                    <!-- Progress Bar Bootstrap 3 -->
                     <div class="progress">
-                        <div class="progress-bar 
-                            <?= in_array($form['status'], ['Ditolak', 'Tertandatangan']) ? 'progress-bar-success' : 'progress-bar-info' ?>"
-                            role="progressbar" aria-valuenow="<?= $percent ?>" aria-valuemin="0" aria-valuemax="100"
+                        <div class="progress-bar
+             <?= in_array($form['status'], ['Ditolak', 'Tertandatangan']) ? 'progress-bar-success' : 'progress-bar-info' ?>"
+                            role="progressbar"
+                            aria-valuenow="<?= $percent ?>"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
                             style="width: <?= $percent ?>%;">
                             <?= $percent ?>%
                         </div>
                     </div>
+
+                    <!-- Tambah tombol Download bila status = Tertandatangan -->
+                    <?php if ($form['status'] === 'Tertandatangan'): ?>
+                        <a href="<?= base_url('form/download-pdf/' . $form['id']) ?>"
+                            class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-download-alt"></span> Download Surat
+                        </a>
+                    <?php endif; ?>
                 </div>
             </div>
         <?php endforeach; ?>
+
     <?php endif ?>
 </div>
 

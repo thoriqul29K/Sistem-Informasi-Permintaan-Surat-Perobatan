@@ -20,4 +20,9 @@ class Pages extends BaseController
     {
         return view('pages/tentang');
     }
+
+    public function progress_bar()
+    {
+        return view('pages/progress_bar');
+    }
 }
