@@ -51,3 +51,6 @@ $routes->get('notifications', 'NotificationController::index');
 
 $routes->get('progress_bar', 'Pages::progress_bar', ['filter' => 'auth']);
 $routes->get('form/download-pdf/(:num)', 'FormController::downloadPdf/$1', ['filter' => 'auth']);
+$routes->post('notifications/deleteall', 'NotificationController::deleteAll',  ['filter' => 'auth']);
+$routes->post('notifications/markallread', 'NotificationController::markAllRead',  ['filter' => 'auth']);
+$routes->post('notifications/delete/(:num)', 'NotificationController::delete/$1',  ['filter' => 'auth']);
