@@ -114,7 +114,7 @@
 
                         <!-- Dropdown nama user -->
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="glyphicon glyphicon-user"> </span> 
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="glyphicon glyphicon-user"> </span>
                                 <?= esc(session('nama')) ?> <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
