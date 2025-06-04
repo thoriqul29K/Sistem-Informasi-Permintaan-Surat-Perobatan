@@ -61,16 +61,24 @@
                     }
                     ?>
                     <p><strong><?= esc($label) ?></strong></p>
-                    <div class="progress">
-                        <div class="progress-bar <?= in_array($form['status'], ['Ditolak', 'Tertandatangan']) ? 'progress-bar-success' : 'progress-bar-info' ?>"
-                            role="progressbar"
-                            aria-valuenow="<?= $percent ?>"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                            style="width: <?= $percent ?>%;">
-                            <?= $percent ?>%
-                        </div>
+                    <div class="progress-bar
+    <?php
+            if ($form['status'] === 'Ditolak') {
+                echo 'progress-bar-danger';
+            } elseif ($form['status'] === 'Tertandatangan') {
+                echo 'progress-bar-success';
+            } else {
+                echo 'progress-bar-info';
+            }
+    ?>"
+                        role="progressbar"
+                        aria-valuenow="<?= $percent ?>"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: <?= $percent ?>%;">
+                        <?= $percent ?>%
                     </div>
+
 
                     <?php if ($form['status'] === 'Tertandatangan'): ?>
                         <a href="<?= base_url('form/download-pdf/' . $form['id']) ?>"

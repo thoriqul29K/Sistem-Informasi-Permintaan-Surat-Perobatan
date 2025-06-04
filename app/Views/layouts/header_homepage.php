@@ -119,7 +119,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <?php if (in_array(session('role'), ['admin', 'ruler'])): ?>
-                                    <li><a href="<?= base_url('list-info') ?>">List Info</a></li>
+                                    <li><a href="<?= base_url('list-info') ?>">Verifikasi Data</a></li>
                                 <?php endif ?>
                                 <li><a href="<?= base_url('form-permintaan-surat') ?>">Isi Form Permintaan</a></li>
                                 <li><a href="<?= base_url('logout') ?>">Logout</a></li>

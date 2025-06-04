@@ -33,7 +33,7 @@
 
       <!-- Slide 2 -->
       <div class="item">
-        <img src="<?= base_url('assets/img/carousel 2.JPG') ?>" alt="Foto 2" class="img-carousel">
+        <img src="<?= base_url('assets/img/carousel 1.JPG') ?>" alt="Foto 2" class="img-carousel">
         <div class="carousel-caption">
           <h3>Alur Pengajuan Digital</h3>
           <p>Surat diperiksa Admin TU lalu disetujui pimpinan melalui sistem.</p>

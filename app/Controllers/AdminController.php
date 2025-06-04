@@ -88,7 +88,7 @@ class AdminController extends BaseController
             $builder->whereIn('form_data.status', ['Menunggu', 'Disetujui', 'Ditolak', 'Tertandatangan']);
         } else if ($role === 'ruler') {
             // ruler hanya lihat Terverifikasi & Disetujui
-            $builder->whereIn('form_data.status', ['Terverifikasi', 'Disetujui', 'Tertandatangan']);
+            $builder->whereIn('form_data.status', ['Terverifikasi', 'Disetujui', 'Tertandatangan', 'Ditolak']);
         } else {
             // misal user biasa, dialihkan
             return redirect()->to('/')->with('error', 'Akses ditolak.');
