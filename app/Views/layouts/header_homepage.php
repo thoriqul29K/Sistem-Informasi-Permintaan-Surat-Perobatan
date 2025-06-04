@@ -118,8 +118,12 @@
                                 <?= esc(session('nama')) ?> <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <?php if (in_array(session('role'), ['admin', 'ruler'])): ?>
+                                <?php $role = session()->get('role'); ?>
+
+                                <?php if ($role === 'admin'): ?>
                                     <li><a href="<?= base_url('list-info') ?>">Verifikasi Data</a></li>
+                                <?php elseif ($role === 'ruler'): ?>
+                                    <li><a href="<?= base_url('list-info') ?>">Setujui / Tanda Tangan Data</a></li>
                                 <?php endif ?>
                                 <li><a href="<?= base_url('form-permintaan-surat') ?>">Isi Form Permintaan</a></li>
                                 <li><a href="<?= base_url('logout') ?>">Logout</a></li>
