@@ -27,16 +27,16 @@
         <img src="<?= base_url('assets/img/carousel2_2.jpg') ?>" alt="Foto 1" class="img-carousel">
         <div class="carousel-caption">
           <h3>Selamat Datang di Sistem Surat Perobatan</h3>
-          <p>Mempermudah pegawai PTBA dalam pengajuan dan persetujuan surat perobatan.</p>
+          <p>Mempermudah pegawai PTBA dalam mengajukan surat perobatan.</p>
         </div>
       </div>
 
       <!-- Slide 2 -->
       <div class="item">
-        <img src="<?= base_url('assets/img/carousel 2_LE.jpg') ?>" alt="Foto 2" class="img-carousel">
+        <img src="<?= base_url('assets/img/carousel 2.JPG') ?>" alt="Foto 2" class="img-carousel">
         <div class="carousel-caption">
           <h3>Alur Pengajuan Digital</h3>
-          <p>Surat diperiksa Admin TU dan disetujui pimpinan melalui sistem.</p>
+          <p>Surat diperiksa Admin TU lalu disetujui pimpinan melalui sistem.</p>
         </div>
       </div>
 
@@ -68,7 +68,7 @@
     <h2>Selamat Datang di Sistem Surat Perobatan Pegawai PTBA</h2>
     <p>
       Sistem ini dibuat untuk mendigitalisasi proses pengajuan surat perobatan bagi pegawai di PT Bukit Asam.
-      Anda dapat melihat informasi SOP, mengajukan surat perobatan, dan melacak status pengajuan Anda secara online.
+      Anda dapat melihat Alur Permintaan/Perobatan, mengajukan surat perobatan, dan melacak status pengajuan Anda secara online.
     </p>
   </div>
 </div>

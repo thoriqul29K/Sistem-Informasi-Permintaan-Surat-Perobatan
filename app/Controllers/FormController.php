@@ -67,7 +67,7 @@ class FormController extends BaseController
         }
 
         // Simpan pesan sukses ke flashdata
-        return redirect()->back()->with('success', 'Informasi berhasil dikirim.');
+        return redirect()->to('/form-permintaan-surat')->with('success', 'Informasi berhasil dikirim.');
     }
 
     public function downloadPdf($id)
