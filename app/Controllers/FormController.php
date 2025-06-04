@@ -37,6 +37,7 @@ class FormController extends BaseController
         unset($data['rumah_sakit_dituju']);
         $data['email'] = session()->get('email');
         $data['status'] = 'Menunggu';
+        $data['created_at'] = date('Y-m-d H:i:s');
         $data['created_by'] = session()->get('user_id');
         $userEmail = session('email'); // misal user pemilik, untuk info lebih lanjut
         $userIdPemohon = session('user_id');
