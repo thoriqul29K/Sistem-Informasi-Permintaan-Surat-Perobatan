@@ -153,7 +153,7 @@ class RulerController extends BaseController
     public function sign($id, $token)
     {
         if (session()->get('role') !== 'ruler') {
-            return redirect()->back()->with('error', 'Akses ditolak.');
+            return redirect()->to('/')->with('error', 'Akses ditolak.');
         }
         // update status
         $this->formModel->update($id, [
@@ -195,6 +195,6 @@ class RulerController extends BaseController
         $email->attach(WRITEPATH . "uploads/surat_{$id}.pdf");
         $email->send();
 
-        return redirect()->back()->with('message', 'Surat berhasil ditandatangani!');
+        return redirect()->to('/')->with('message', 'Tanda tangan berhasil!.');
     }
 }
