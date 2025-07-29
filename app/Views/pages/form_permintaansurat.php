@@ -55,19 +55,29 @@
           id="np"
           class="formbold-form-input"
           required
-          pattern="[0-9]{1,10}"
+          pattern="[0-9]{10}"
           maxlength="10"
+          minlength="10"
           data-toggle="tooltip"
           data-placement="right"
-          title="NP harus berupa angka (0–9) dan maksimal 10 digit." />
+          title="NP harus berupa angka (0–9) dan harus 10 digit." />
         <div class="invalid-feedback">
-          Silakan masukkan NP berupa angka 0-9 dan 10 digit.
+          Silakan masukkan NP berupa angka 0-9 dan harus 10 digit.
         </div>
       </div>
 
       <div class="formbold-mb-3">
         <label for="umur" class="formbold-form-label">Umur</label>
-        <input type="number" name="umur" id="umur" class="formbold-form-input" required />
+        <input
+          type="text"
+          name="umur"
+          id="umur"
+          class="formbold-form-input"
+          required
+          inputmode="numeric"
+          maxlength="2"
+          pattern="^(?:1[89]|[2-5]\d|60)$"
+          title="Umur yang dimasukkan berupa angka 18 - 60 dan harus 2 digit." />
       </div>
 
       <div class="formbold-mb-3">

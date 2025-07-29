@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpdoc>
+  <title>Aplikasi Permintaan Surat Berobat</title>
+
+  <!-- Which code to parse -->
+  <paths>
+    <directory>application</directory>
+    <directory>system</directory>
+  </paths>
+
+  <!-- Output directory -->
+  <target>docs/api</target>
+
+  <!-- Enable GraphViz-based class diagrams -->
+  <transformer>
+    <templates>
+      <template name="clean" />          <!-- or any template you prefer -->
+    </templates>
+    <graphs enabled="true" />
+  </transformer>
+</phpdoc>

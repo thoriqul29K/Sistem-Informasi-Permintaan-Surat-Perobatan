@@ -186,10 +186,14 @@ class AdminController extends BaseController
 
     public function hapus($id)
     {
-        // Cari data berdasarkan ID
-        $info = $this->formModel->find($id);
-        if (!$info) {
-            return redirect()->to('/list-info')->with('error', 'Data tidak ditemukan.');
+        if (session()->get('role') !== 'admin') {
+            return redirect()->to('/list-info')
+                ->with('error', 'Akses ditolak, hanya admin yang bisa menghapus data!.');
+        } else {
+            $info = $this->formModel->find($id);
+            if (!$info) {
+                return redirect()->to('/list-info')->with('error', 'Data tidak ditemukan.');
+            }
         }
 
         // Hapus data

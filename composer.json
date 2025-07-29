@@ -16,6 +16,7 @@
         "dompdf/dompdf": "^3.1",
         "endroid/qr-code": "4.0",
         "laminas/laminas-escaper": "^2.14",
+        "phpdocumentor/shim": "^3.8",
         "phpmailer/phpmailer": "^6.9",
         "psr/log": "^3.0"
     },
@@ -61,7 +62,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpdocumentor/shim": true
+        }
     },
     "scripts": {
         "test": "phpunit"

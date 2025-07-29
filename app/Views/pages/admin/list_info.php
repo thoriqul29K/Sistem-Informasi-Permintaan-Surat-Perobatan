@@ -19,6 +19,12 @@
         </div>
     <?php endif; ?>
 
+    <?php if (session()->getFlashdata('error')): ?>
+        <div class="alert alert-warning">
+            <?= session()->getFlashdata('error') ?>
+        </div>
+    <?php endif; ?>
+
     <!-- Wrapper untuk responsive table -->
     <div class="table-responsive">
         <table class="table table-bordered table-hover mb-0">

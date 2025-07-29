@@ -13,8 +13,8 @@ $routes->post('login', 'AuthController::login');
 $routes->get('logout', 'AuthController::logout');
 
 // Halaman form minta reset
-$routes->get('reset-password',      'AuthController::showResetForm');
-$routes->post('reset-password',     'AuthController::sendResetLink');
+$routes->get('reset-password', 'AuthController::showResetForm');
+$routes->post('reset-password', 'AuthController::sendResetLink');
 // Form set password baru via token
 $routes->get('reset-password/(:segment)', 'AuthController::showNewPasswordForm/$1');
 $routes->post('reset-password/(:segment)', 'AuthController::resetPassword/$1');

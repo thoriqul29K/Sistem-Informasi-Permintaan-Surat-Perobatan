@@ -77,8 +77,8 @@ if (! empty($info['qr_token'])) {
         </a>
     <?php endif; ?>
 
-    <!-- 4) Hapus Informasi (admin & ruler, untuk semua status) -->
-    <?php if (in_array($role, ['admin', 'ruler'])): ?>
+    <!-- 4) Hapus Informasi (hanya admin & hanya untuk status Menunggu atau Ditolak) -->
+    <?php if ($role === 'admin' && in_array($info['status'], ['Menunggu', 'Ditolak'])): ?>
         <form
             action="<?= base_url('admin/hapus/' . $info['id']) ?>"
             method="post"
