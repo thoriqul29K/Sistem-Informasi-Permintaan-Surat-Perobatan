@@ -1,7 +1,8 @@
 <?= $this->include('layouts/header_homepage') ?>
 <!-- ✅ ISI KONTEN HALAMAN -->
 <div class="container">
-  <h2>Alur Permintaan/ Pengajuan</h2>
+  <h2>Alur Permintaan / Pengajuan</h2>
+  <img src="<?= base_url('assets/img/Flowchart.png') ?>" alt="flowchart">
   <ol>
     <li>Pegawai login ke sistem menggunakan akun yang sudah terdaftar.</li>
     <li>Mengisi form permohonan surat perobatan secara digital.</li>
